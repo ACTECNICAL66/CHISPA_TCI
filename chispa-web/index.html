@@ -20,6 +20,8 @@
       <a href="#proyecto">El proyecto</a>
       <a href="#propuesta">Propuesta</a>
       <a href="#instalaciones">Instalaciones</a>
+      <a href="#presupuesto">Presupuesto</a>
+      <a href="#cronograma">Cronograma</a>
       <a href="#equipo">Equipo</a>
     </nav>
     <a class="nav-cta" href="#visor">Explorar en 3D</a>
@@ -35,7 +37,7 @@
       </h1>
       <p class="hero-tag reveal">La biblioteca no desaparece: <em>aprende a soldar</em>.</p>
       <p class="hero-sub reveal">
-        Transformamos la biblioteca de la escuela —36 m² en planta baja— en un espacio híbrido de
+        Transformamos la biblioteca de la escuela —48 m² en planta baja— en un espacio híbrido de
         aprendizaje: <strong>Biblioteca + Taller de Microelectrónica + Informática</strong>, con una
         zona central flexible que se reconfigura para cada actividad.
       </p>
@@ -47,7 +49,7 @@
         <a class="btn btn-ghost" href="#proyecto">Leer el informe</a>
       </div>
       <dl class="hero-stats reveal">
-        <div><dt>36 m²</dt><dd>intervienen sin obra civil</dd></div>
+        <div><dt>48 m²</dt><dd>intervienen sin obra civil</dd></div>
         <div><dt>3 zonas</dt><dd>+ zona flexible central</dd></div>
         <div><dt>6 puestos</dt><dd>de microsoldadura</dd></div>
         <div><dt>440 lux</dt><dd>calculados para estudio</dd></div>
@@ -146,8 +148,8 @@
       <p class="kicker reveal">2 · Relevamiento del espacio (E1)</p>
       <h3 class="reveal">Lo que la escuela ya tiene</h3>
       <div class="stats-grid">
-        <div class="stat reveal"><span class="stat-num" data-count="36" data-decimals="0">0</span><span class="stat-unit">m²</span><p>interiores (6,00 × 6,00 m entre ejes)</p></div>
-        <div class="stat reveal"><span class="stat-num" data-count="4" data-decimals="0">0</span><span class="stat-unit">m</span><p>altura piso–techo · ≈144 m³</p></div>
+        <div class="stat reveal"><span class="stat-num" data-count="48" data-decimals="0">0</span><span class="stat-unit">m²</span><p>interiores (8,00 × 6,00 m entre ejes)</p></div>
+        <div class="stat reveal"><span class="stat-num" data-count="4" data-decimals="0">0</span><span class="stat-unit">m</span><p>altura piso–techo · ≈192 m³</p></div>
         <div class="stat reveal"><span class="stat-num" data-count="31" data-decimals="0">0</span><span class="stat-unit">conexiones</span><p>eléctricas existentes</p></div>
         <div class="stat reveal"><span class="stat-num" data-count="21" data-decimals="0">0</span><span class="stat-unit">elementos</span><p>de mobiliario reutilizable</p></div>
         <div class="stat reveal"><span class="stat-num" data-count="12" data-decimals="0">0</span><span class="stat-unit">m</span><p>lineales de colección bibliográfica</p></div>
@@ -162,7 +164,7 @@
       <h3 class="reveal">Análisis <span class="accent">FODA</span></h3>
       <div class="foda-grid">
         <div class="foda foda-f reveal"><h4>Fortalezas <small>interno · positivo</small></h4>
-          <ul><li>Planta baja, accesible</li><li>Superficie amplia (36 m²)</li><li>Muros perimetrales completos: estanterías, paneles, equipamiento</li><li>Luz natural disponible</li><li>Mobiliario bibliotecario reutilizable</li></ul></div>
+          <ul><li>Planta baja, accesible</li><li>Superficie amplia (48 m²)</li><li>Muros perimetrales completos: estanterías, paneles, equipamiento</li><li>Luz natural disponible</li><li>Mobiliario bibliotecario reutilizable</li></ul></div>
         <div class="foda foda-o reveal"><h4>Oportunidades <small>externo · positivo</small></h4>
           <ul><li>Necesidad concreta: los Proyectos Integradores no tienen espacio</li><li>Tendencia internacional hacia espacios maker / bibliotecas híbridas</li><li>Fuentes de financiamiento: cooperadora, municipio, empresas locales</li></ul></div>
         <div class="foda foda-d reveal"><h4>Debilidades <small>interno · negativo</small></h4>
@@ -210,95 +212,101 @@
 
     <div class="plan-layout">
       <div class="plan-wrap reveal">
-        <svg id="floorplan" viewBox="0 0 640 500" role="img" aria-label="Plano de zonificación según el modelo 3D">
+        <svg id="floorplan" viewBox="0 0 620 470" role="img" aria-label="Plano de zonificación a escala 8,00 x 6,00 m">
           <!-- pórtico (sur-este, fuera del muro) -->
-          <rect x="222" y="389" width="331" height="46" class="plan-porch"/>
-          <rect x="440" y="395" width="112" height="28" class="plan-furn"/>
-          <text x="300" y="420" class="plan-label">pórtico con banco</text>
-          <!-- muros + recinto (interiores 9,00 × 5,95 m según el modelo) -->
-          <rect x="40" y="40" width="520" height="349" class="plan-wall"/>
-          <rect x="48" y="48" width="504" height="333" class="plan-room"/>
-          <!-- cotas (como en el plano real: 9,00 × 5,95 m) -->
+          <rect x="225" y="393" width="270" height="42" class="plan-porch"/>
+          <rect x="430" y="398" width="90" height="26" class="plan-furn"/>
+          <text x="300" y="418" class="plan-label">pórtico con banco</text>
+          <!-- muros + recinto (interiores 8,00 x 6,00 m) -->
+          <rect x="50" y="45" width="458" height="348" class="plan-wall"/>
+          <rect x="58" y="53" width="440" height="330" class="plan-room"/>
+          <!-- cotas: 8,00 m ancho x 6,00 m largo -->
           <g class="plan-dims">
-            <line x1="48" y1="20" x2="552" y2="20" class="plan-dim"/>
-            <line x1="48" y1="14" x2="48" y2="26" class="plan-dim-tick"/>
-            <line x1="552" y1="14" x2="552" y2="26" class="plan-dim-tick"/>
-            <text x="300" y="15" class="plan-dim-text" text-anchor="middle">9,00 m</text>
-            <line x1="572" y1="48" x2="572" y2="381" class="plan-dim"/>
-            <line x1="566" y1="48" x2="578" y2="48" class="plan-dim-tick"/>
-            <line x1="566" y1="381" x2="578" y2="381" class="plan-dim-tick"/>
-            <text x="584" y="214" class="plan-dim-text" text-anchor="middle" transform="rotate(-90 584 214)">5,95 m</text>
+            <line x1="58" y1="26" x2="498" y2="26" class="plan-dim"/>
+            <line x1="58" y1="20" x2="58" y2="32" class="plan-dim-tick"/>
+            <line x1="498" y1="20" x2="498" y2="32" class="plan-dim-tick"/>
+            <text x="278" y="21" class="plan-dim-text" text-anchor="middle">8,00 m</text>
+            <line x1="518" y1="53" x2="518" y2="383" class="plan-dim"/>
+            <line x1="512" y1="53" x2="524" y2="53" class="plan-dim-tick"/>
+            <line x1="512" y1="383" x2="524" y2="383" class="plan-dim-tick"/>
+            <text x="530" y="218" class="plan-dim-text" text-anchor="middle" transform="rotate(-90 530 218)">6,00 m</text>
           </g>
-          <!-- ventanas: norte (larga) y sur (teal, sobre el pórtico) -->
-          <line x1="115" y1="44" x2="524" y2="44" class="plan-window"/>
-          <line x1="222" y1="385" x2="524" y2="385" class="plan-window-teal"/>
-          <text x="320" y="34" class="plan-label">ventana norte</text>
-          <text x="373" y="376" class="plan-label">ventana sur</text>
-          <!-- puerta doble batiente en la esquina SO (como el plano real) -->
-          <line x1="48" y1="385" x2="131" y2="385" class="plan-door"/>
-          <path d="M 48 343.5 A 41.5 41.5 0 0 1 89.5 385" class="plan-door-swing"/>
-          <line x1="48" y1="385" x2="48" y2="343.5" class="plan-door-swing"/>
-          <path d="M 131 343.5 A 41.5 41.5 0 0 0 89.5 385" class="plan-door-swing"/>
-          <line x1="131" y1="385" x2="131" y2="343.5" class="plan-door-swing"/>
-          <text x="40" y="452" class="plan-label">puerta doble</text>
-          <!-- puerta secundaria (junto a la doble, como el plano real) -->
-          <line x1="152" y1="385" x2="188" y2="385" class="plan-door"/>
-          <path d="M 152 349 A 36 36 0 0 1 188 385" class="plan-door-swing"/>
-          <line x1="152" y1="385" x2="152" y2="349" class="plan-door-swing"/>
-          <!-- zonas clicables (según el modelo: biblioteca NO · taller E · informática S · flexible centro) -->
+          <!-- ventanas: norte (larga) y sur (sobre el pórtico) -->
+          <line x1="120" y1="49" x2="490" y2="49" class="plan-window"/>
+          <line x1="225" y1="389" x2="490" y2="389" class="plan-window-teal"/>
+          <text x="305" y="42" class="plan-label">ventana norte</text>
+          <text x="355" y="382" class="plan-label">ventana sur</text>
+          <!-- puerta doble batiente en la esquina SO -->
+          <line x1="58" y1="389" x2="130" y2="389" class="plan-door"/>
+          <path d="M 58 351 A 38 38 0 0 1 96 389" class="plan-door-swing"/>
+          <line x1="58" y1="389" x2="58" y2="351" class="plan-door-swing"/>
+          <path d="M 130 351 A 38 38 0 0 0 92 389" class="plan-door-swing"/>
+          <line x1="130" y1="389" x2="130" y2="351" class="plan-door-swing"/>
+          <text x="60" y="455" class="plan-label">puerta doble</text>
+          <!-- puerta secundaria (junto a la doble) -->
+          <line x1="150" y1="389" x2="185" y2="389" class="plan-door"/>
+          <path d="M 150 355 A 35 35 0 0 1 185 389" class="plan-door-swing"/>
+          <line x1="150" y1="389" x2="150" y2="355" class="plan-door-swing"/>
+          <!-- zonas clicables: biblioteca NO · taller E · flexible centro-O · informática SO -->
           <g class="zone" data-zone="biblioteca" tabindex="0" role="button" aria-label="Zona A, biblioteca flexible">
-            <rect x="48" y="48" width="257.6" height="200"/>
-            <text x="176" y="128">A</text>
-            <text x="176" y="158" class="zone-sub">Biblioteca</text>
+            <rect x="58" y="53" width="220" height="110"/>
+            <text x="168" y="100">A</text>
+            <text x="168" y="120" class="zone-sub">Biblioteca</text>
           </g>
           <g class="zone" data-zone="taller" tabindex="0" role="button" aria-label="Zona B, taller de microsoldadura">
-            <rect x="339.2" y="48" width="212.8" height="333"/>
-            <text x="445" y="196">B</text>
-            <text x="445" y="226" class="zone-sub">Taller</text>
+            <rect x="278" y="53" width="220" height="330"/>
+            <text x="388" y="205">B</text>
+            <text x="388" y="225" class="zone-sub">Taller</text>
           </g>
           <g class="zone" data-zone="flexible" tabindex="0" role="button" aria-label="Zona flexible central">
-            <rect x="104" y="248" width="235.2" height="68"/>
-            <text x="221" y="282" class="zone-text-sm">★</text>
-            <text x="221" y="306" class="zone-sub zone-sub-sm">Zona flexible</text>
+            <rect x="58" y="163" width="220" height="55"/>
+            <text x="168" y="185" class="zone-text-sm">★</text>
+            <text x="168" y="203" class="zone-sub zone-sub-sm">Zona flexible</text>
           </g>
           <g class="zone" data-zone="informatica" tabindex="0" role="button" aria-label="Zona C, informática">
-            <rect x="227.2" y="316" width="112" height="65"/>
-            <text x="283" y="344" class="zone-text-sm">C</text>
-            <text x="283" y="366" class="zone-sub zone-sub-sm">Informática</text>
+            <rect x="58" y="273" width="220" height="110"/>
+            <text x="168" y="320">C</text>
+            <text x="168" y="340" class="zone-sub">Informática</text>
           </g>
           <!-- mobiliario según el modelo -->
-          <rect x="102" y="52" width="205" height="24" class="plan-furn"/>
-          <line x1="170" y1="52" x2="170" y2="76" class="plan-furn-dash"/>
-          <line x1="238" y1="52" x2="238" y2="76" class="plan-furn-dash"/>
-          <rect x="102" y="80" width="24" height="150" class="plan-furn"/>
-          <rect x="121" y="173" width="89" height="45" class="plan-furn"/>
-          <circle cx="98" cy="248" r="16" class="plan-furn"/>
-          <rect x="350" y="56" width="174" height="20" class="plan-furn"/>
-          <rect x="513" y="164" width="39" height="112" class="plan-furn"/>
-          <rect x="172" y="258" width="88" height="39" class="plan-furn"/>
-          <rect x="246" y="258" width="88" height="39" class="plan-furn"/>
-          <rect x="238" y="349" width="90" height="28" class="plan-furn"/>
-          <line x1="552" y1="180" x2="552" y2="202" class="plan-tv"/>
-          <text x="544" y="196" class="plan-label" text-anchor="end">TV</text>
-          <line x1="425" y1="44" x2="480" y2="44" class="plan-pizzara"/>
-          <text x="452" y="66" class="plan-label" text-anchor="middle">pizarra</text>
-          <rect x="524" y="190" width="24" height="38" class="plan-furn-dash"/>
-          <text x="518" y="212" class="plan-label" text-anchor="end">A.A.</text>
-          <line x1="44" y1="76" x2="44" y2="356" class="plan-board"/>
-          <text x="58" y="216" class="plan-label" transform="rotate(-90 58 216)" text-anchor="middle">fichero / pizarra</text>
-          <rect x="348" y="390" width="62" height="7" class="plan-sign"/>
-          <text x="379" y="452" class="plan-label" text-anchor="middle">CHISPA</text>
-          <!-- circulación -->
-          <path d="M 78 375 L 240 290" class="plan-circ"/>
-          <text x="150" y="332" class="plan-label plan-circ-label">circulación</text>
-          <!-- norte -->
+          <rect x="120" y="58" width="150" height="18" class="plan-furn"/>
+          <line x1="162" y1="58" x2="162" y2="76" class="plan-furn-dash"/>
+          <line x1="204" y1="58" x2="204" y2="76" class="plan-furn-dash"/>
+          <line x1="246" y1="58" x2="246" y2="76" class="plan-furn-dash"/>
+          <rect x="120" y="82" width="18" height="80" class="plan-furn"/>
+          <circle cx="205" cy="140" r="14" class="plan-furn"/>
+          <rect x="345" y="58" width="130" height="18" class="plan-furn"/>
+          <line x1="388" y1="58" x2="388" y2="76" class="plan-furn-dash"/>
+          <line x1="431" y1="58" x2="431" y2="76" class="plan-furn-dash"/>
+          <rect x="290" y="58" width="18" height="150" class="plan-furn"/>
+          <line x1="290" y1="108" x2="308" y2="108" class="plan-furn-dash"/>
+          <line x1="290" y1="158" x2="308" y2="158" class="plan-furn-dash"/>
+          <line x1="490" y1="180" x2="490" y2="200" class="plan-tv"/>
+          <text x="498" y="196" class="plan-label" text-anchor="start">TV</text>
+          <rect x="455" y="365" width="38" height="18" class="plan-furn"/>
+          <rect x="80" y="170" width="95" height="40" class="plan-furn"/>
+          <rect x="180" y="170" width="95" height="40" class="plan-furn"/>
+          <rect x="70" y="280" width="195" height="20" class="plan-furn"/>
+          <line x1="120" y1="280" x2="120" y2="300" class="plan-furn-dash"/>
+          <line x1="170" y1="280" x2="170" y2="300" class="plan-furn-dash"/>
+          <line x1="220" y1="280" x2="220" y2="300" class="plan-furn-dash"/>
+          <line x1="430" y1="49" x2="480" y2="49" class="plan-pizzara"/>
+          <text x="455" y="44" class="plan-label" text-anchor="middle">pizarra</text>
+          <rect x="474" y="210" width="24" height="32" class="plan-furn-dash"/>
+          <text x="472" y="230" class="plan-label" text-anchor="end">A.A.</text>
+          <line x1="54" y1="80" x2="54" y2="350" class="plan-board"/>
+          <text x="66" y="215" class="plan-label" transform="rotate(-90 66 215)" text-anchor="middle">fichero / pizarra</text>
+          <rect x="215" y="382" width="90" height="7" class="plan-sign"/>
+          <text x="260" y="455" class="plan-label" text-anchor="middle">CHISPA</text>
+          <path d="M 100 380 L 200 200" class="plan-circ"/>
+          <text x="145" y="320" class="plan-label plan-circ-label">circulación</text>
           <g>
-            <line x1="616" y1="88" x2="616" y2="58" stroke="rgba(255,255,255,0.5)" stroke-width="2"/>
-            <path d="M 616 48 L 610 60 L 622 60 Z" fill="rgba(255,255,255,0.5)"/>
-            <text x="616" y="108" class="plan-label" text-anchor="middle">N</text>
+            <line x1="575" y1="95" x2="575" y2="65" stroke="rgba(255,255,255,0.5)" stroke-width="2"/>
+            <path d="M 575 55 L 569 67 L 581 67 Z" fill="rgba(255,255,255,0.5)"/>
+            <text x="575" y="115" class="plan-label" text-anchor="middle">N</text>
           </g>
         </svg>
-        <p class="plan-caption">Plano de zonificación según el modelo 3D (9,00 × 5,95 m · norte arriba · puerta doble y pórtico al sur).</p>
+        <p class="plan-caption">Plano de zonificación a escala 8,00 × 6,00 m · norte arriba · puerta doble y pórtico al sur.</p>
       </div>
 
       <div class="zone-panel reveal" id="zonePanel" aria-live="polite">
@@ -373,8 +381,8 @@
         </div>
         <div class="formula">
           <code>E = (N · Φ · CU · MF) / A</code>
-          <p>E = (9 × 4.000 lm × 0,55 × 0,8) / 36 m² = <strong>440 lux</strong></p>
-          <p class="footnote">9 paneles LED de 40 W en retícula 3 × 3 (3,00 m entre ejes). Si la medición arroja &lt; 400 lux, se suman 3 paneles (retícula 3 × 4) alcanzando ≈ 585 lux. Tareas de precisión: lupa-lámpara con &gt; 1.000 lux en el punto.</p>
+          <p>E = (12 × 4.000 lm × 0,55 × 0,8) / 48 m² = <strong>440 lux</strong></p>
+          <p class="footnote">12 paneles LED de 40 W en retícula 3 × 4 (3,00 m entre ejes). Si la medición arroja &lt; 400 lux, se suman 3 paneles (retícula 3 × 5) alcanzando ≈ 550 lux. Tareas de precisión: lupa-lámpara con &gt; 1.000 lux en el punto.</p>
         </div>
         <ul class="chips">
           <li><strong>5.000 K</strong> · taller (distinguir bandas de resistencias)</li>
@@ -389,7 +397,7 @@
         <h3><svg viewBox="0 0 24 24"><path d="M3 8h11a2.5 2.5 0 1 0-2.4-3.2l1.9.6A.5.5 0 1 1 14 6H3V8zm0 4h16a2.5 2.5 0 1 1-2.4 3.2l1.9-.6a.5.5 0 1 0 .5-.6H3v-2zm0 4h8a2 2 0 1 1-1.9 2.6l1.9-.6H3v-2z"/></svg> Ventilación en tres niveles</h3>
         <ol class="vent-list">
           <li><strong>Extracción localizada:</strong> 2 extractores de banco con filtro de carbón activado, a la altura de la punta del cautín (capturan el humo en la fuente).</li>
-          <li><strong>Renovación general:</strong> extractor de techo/muro Ø 200 mm, caudal ≈ 500 m³/h → <strong>≈ 4,6 renovaciones de aire por hora</strong> (rango recomendado: 4–6 para talleres livianos).</li>
+          <li><strong>Renovación general:</strong> extractor de techo/muro Ø 250 mm, caudal ≈ 800 m³/h → <strong>≈ 4,2 renovaciones de aire por hora</strong> (rango recomendado: 4–6 para talleres livianos).</li>
           <li><strong>Ventilación cruzada natural</strong> por las ventanas durante tareas sin soldadura.</li>
         </ol>
         <p class="footnote">Problema a resolver: los humos de flux no deben convivir con el acervo bibliográfico ni con los usuarios.</p>
@@ -446,10 +454,83 @@
     </blockquote>
   </section>
 
+  <!-- ============ PRESUPUESTO ============ -->
+  <section class="section section-alt" id="presupuesto">
+    <div class="section-head">
+      <p class="kicker reveal">8 · Presupuesto estimado</p>
+      <h2 class="reveal">Cuánto cuesta la <span class="accent">chispa</span></h2>
+      <p class="section-lead reveal">
+        Un proyecto viable se sostiene con números. CHISPA se resuelve <strong>sin obra civil</strong> y con el
+        mobiliario autoconstruido por los estudiantes: se paga el material, no un contratista.
+      </p>
+    </div>
+    <div class="budget-layout">
+      <div class="budget-table-wrap reveal">
+        <table class="budget-table">
+          <thead>
+            <tr><th>Rubro</th><th>Detalle</th><th style="text-align:right">Estimado (ARS)</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rubro">Mobiliario de taller</td><td>Bancos y mesas construidos por los estudiantes en el taller de la escuela (solo materiales: madera, herrajes, tornillería)</td><td class="amount">$ 180.000</td></tr>
+            <tr><td class="rubro">Instrumentación y herramientas</td><td>4 estaciones de soldadura, 1 de aire caliente, 2 multímetros, 2 fuentes 0–30 V, lámparas-lupa LED</td><td class="amount">$ 420.000</td></tr>
+            <tr><td class="rubro">Extracción y ventilación</td><td>2 extractores de banco con filtro de carbón activado + extractor general Ø 200 mm</td><td class="amount">$ 260.000</td></tr>
+            <tr><td class="rubro">Instalación eléctrica</td><td>Tablero seccional de 4 circuitos, disyuntor diferencial, térmicas, cableado y tomas</td><td class="amount">$ 310.000</td></tr>
+            <tr><td class="rubro">Iluminación</td><td>Plafones LED 5.000 K (taller), 4.000 K (general) y 3.000 K (lectura) + luz de tarea por puesto</td><td class="amount">$ 190.000</td></tr>
+            <tr><td class="rubro">Seguridad e higiene</td><td>Extintor CO₂ 5 kg, botiquín, antiparras, pulseras ESD, contenedor RAEE y señalética</td><td class="amount">$ 140.000</td></tr>
+            <tr><td class="rubro">Informática</td><td>Cableado de red, regletas y carro de carga para notebooks institucionales</td><td class="amount">$ 120.000</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <aside class="budget-side">
+        <div class="budget-total reveal">
+          <p class="label">Inversión total estimada</p>
+          <p class="value">$ 1.620.000</p>
+          <p class="sub">ARS · materiales, equipamiento e instalación</p>
+        </div>
+        <div class="budget-zero reveal">
+          <h4 style="margin-bottom:8px">Obra civil: <strong>$ 0</strong></h4>
+          <p style="color:var(--muted);font-size:0.9rem">No se modifican muros, tabiques ni aberturas. El proyecto opera sobre tres variables: mobiliario, instalaciones y organización.</p>
+        </div>
+        <p class="budget-note reveal">Valores de referencia 2026 en pesos argentinos, sujetos a cotización. El mobiliario se autoconstruye en la escuela, por lo que su costo es únicamente el de los materiales.</p>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============ CRONOGRAMA ============ -->
+  <section class="section" id="cronograma">
+    <div class="section-head">
+      <p class="kicker reveal">9 · Plan de ejecución</p>
+      <h2 class="reveal">Seis semanas para <span class="accent">encenderla</span></h2>
+      <p class="section-lead reveal">
+        Un cronograma realista en fases progresivas, con el equipo estudiantil como mano de obra y
+        acompañamiento docente en las tareas técnicas.
+      </p>
+    </div>
+    <div class="gantt reveal">
+      <div class="gantt-head">
+        <div class="gantt-label">Etapa</div>
+        <div class="gantt-weeks"><span>Sem 1</span><span>Sem 2</span><span>Sem 3</span><span>Sem 4</span><span>Sem 5</span><span>Sem 6</span></div>
+      </div>
+      <div class="gantt-row"><div class="gantt-label">Gestión y compras</div><div class="gantt-track"><span class="gantt-bar b-violet" style="left:0%;width:16.67%">Compras</span></div></div>
+      <div class="gantt-row"><div class="gantt-label">Adecuación eléctrica</div><div class="gantt-track"><span class="gantt-bar" style="left:0%;width:33.33%">Tablero y circuitos</span></div></div>
+      <div class="gantt-row"><div class="gantt-label">Construcción de bancos y mesas</div><div class="gantt-track"><span class="gantt-bar" style="left:16.67%;width:33.33%">Autoconstrucción</span></div></div>
+      <div class="gantt-row"><div class="gantt-label">Extracción e iluminación</div><div class="gantt-track"><span class="gantt-bar b-blue" style="left:33.33%;width:33.33%">Montaje</span></div></div>
+      <div class="gantt-row"><div class="gantt-label">Estaciones e informática</div><div class="gantt-track"><span class="gantt-bar b-blue" style="left:50%;width:16.67%">Equipamiento</span></div></div>
+      <div class="gantt-row"><div class="gantt-label">Catalogación, QR y señalética</div><div class="gantt-track"><span class="gantt-bar b-green" style="left:66.67%;width:16.67%">Organización</span></div></div>
+      <div class="gantt-row"><div class="gantt-label">Pruebas e inauguración</div><div class="gantt-track"><span class="gantt-bar b-green" style="left:83.33%;width:16.67%">Puesta a punto</span></div></div>
+    </div>
+    <div class="gantt-legend reveal">
+      <span><i style="background:linear-gradient(135deg,var(--amber),var(--amber-2))"></i>Obra y montaje</span>
+      <span><i style="background:linear-gradient(135deg,var(--blue),#2b7fd6)"></i>Instalaciones y equipamiento</span>
+      <span><i style="background:linear-gradient(135deg,var(--green),#1fa875)"></i>Organización y cierre</span>
+      <span><i style="background:linear-gradient(135deg,var(--violet),#5a3ce0)"></i>Gestión inicial</span>
+    </div>
+    <p class="gantt-note reveal">Duración estimada de 6 semanas con equipo estudiantil y acompañamiento docente. Las compras se concentran en la semana 1; la autoconstrucción del mobiliario es la fase más larga y usa materiales ya adquiridos.</p>
+  </section>
   <!-- ============ EQUIPO ============ -->
   <section class="section" id="equipo">
     <div class="section-head">
-      <p class="kicker reveal">8 · Equipo expositor</p>
+      <p class="kicker reveal">10 · Equipo expositor</p>
       <h2 class="reveal">Quiénes encienden la <span class="accent">chispa</span></h2>
     </div>
     <div class="team-grid">
