@@ -1,0 +1,14 @@
+# deps / build
+chispa-web/node_modules/
+chispa-web/dist/
+*.log
+.DS_Store
+Thumbs.db
+
+# SketchUp backup + archivos temporales
+*.skb
+*.lck
+*.tmp
+
+# Vite cache
+chispa-web/.vite/

@@ -1,0 +1,639 @@
+Título del trabajo: CHISPA  Informe
+
+                                          Subtítulo del trabajo:
+
+Área: Proyecto escuela      Fecha de presentación: 30 de junio de
+                            2026
+
+Nivel: Secundario           Sala/Grado/Año/Curso: 6ºA
+
+Institución Educativa: Instituto José Antonio Balseiro (IPET Nº66) : 351-4332330
+
+Localidad: Córdoba Capital  Mail escuela: ipem66@gmail.com
+                            Dirección: Avenida Hipolito Yrigoyen
+                            258 B° Nueva Córdoba
+
+                            Alumnos Expositores
+
+1) Alejandro Cantón         1) 49555923
+2) Elián Lencinas           2) 49222304
+3) Fabricio Pinto           3) 48456014
+4) Avril Zamboni            4) 50628480
+5) Paloma Murua             5) 50327090
+6) Francisco Bustos         6) 48532765
+
+                            Docente Asesor
+
+Apellido y Nombres: Dubois, Nicolás Agustín DNI: 41115018
+                                                             Mail: nicolasagustin_14@hotmail.com
+                                          AÑO 2026
+
+Índice
+
+Índice                                                2
+
+1. Resumen ejecutivo                                  3
+
+2. Introducción                                       4
+
+3. Relevamiento del espacio (E1)                      5
+
+3.1 Ubicación en el edificio                          5
+
+3.2 Caracterización físico-constructiva               6
+
+3.3 Uso actual del espacio                            7
+
+3.4 Evidencia fotográfica                             7
+
+4. Diagnóstico : análisis FODA                        9
+
+5. Fundamentación de la propuesta (E3)                10
+
+5.1 El problema detectado                             10
+
+5.2 Respaldo curricular y normativo                   10
+
+5.3 Referentes del proyecto                           11
+
+5.4 Principio rector                                  11
+
+6. Descripción de la propuesta de diseño              12
+
+6.1 Concepto                                          12
+
+6.2 Objetivos                                         12
+
+6.3 Zonificación                                      13
+
+6.4 Sector B -- Taller de microsoldadura (6 puestos)  14
+
+6.5 Sector A -- Biblioteca flexible                   15
+
+6.6 Sector C -- Informática                           16
+
+6.7 Zona flexible central                             16
+
+6.8 Circulación y ergonomía                           16
+
+7. Instalaciones proyectadas (memoria técnica)        17
+
+7.1 Instalación eléctrica                             17
+
+7.2 Iluminación -- memoria de cálculo                 18
+
+7.3 Ventilación                                       19
+
+8. Seguridad e higiene                                20
+
+9. Gestión de la colección bibliográfica              21
+
+9.1. Sostenibilidad del proyecto                      21
+
+10. Conclusión                                        22
+
+11. ANEXOS                                            23
+1. Resumen ejecutivo
+
+  El presente proyecto propone la transformación de la biblioteca de la institución (aprox. 36
+m², planta baja) en un espacio híbrido de aprendizaje: Biblioteca-Taller de Microelectrónica e
+Informática, denominado "CHISPA".
+
+  La propuesta surge de una necesidad concreta y verificable: los Proyectos Integradores de
+7° año requieren un espacio equipado para el desarrollo, soldadura, montaje y testeo de
+prototipos electrónicos, actividad que hoy se realiza en aulas comunes, sin puestos de
+trabajo aptos, sin ventilación adecuada para las tareas de soldadura y con riesgo eléctrico.
+
+  En lugar de reemplazar la función biblioteca, el proyecto la integra y potencia, organizando
+el espacio en tres zonas (Biblioteca flexible -- Taller de microsoldadura -- Informática) más
+una zona central flexible con mobiliario móvil, que permite reconfigurar el ambiente según la
+actividad: estudio, lectura, trabajo grupal, construcción de prototipos o exposición.
+
+   La intervención es de bajo costo y alta viabilidad: no implica obra civil, se reutilizan
+estanterías y mobiliario existente, los bancos de trabajo serán construidos por los propios
+estudiantes en el taller de la escuela, y el presupuesto se organiza en tres fases de
+ejecución progresiva con fuentes de financiamiento identificadas.
+2. Introducción
+
+  Como equipo observamos críticamente los espacios de nuestra escuela y detectamos una
+tensión entre dos realidades:
+
+     Por un lado, la biblioteca funciona actualmente con baja ocupación: [completar con
+         datos de la entrevista a la bibliotecaria: horas de uso efectivo, cantidad de préstamos
+         mensuales, etc.], y su rol de "depósito de libros" está siendo desplazado por la
+         consulta digital.
+
+     Por el otro, los estudiantes de 7° año necesitan un lugar para trabajar sus Proyectos
+         Integradores: soldar, medir, probar y armar circuitos. Hoy ese trabajo se hace sobre
+         bancos improvisados en aulas, con estaciones de soldadura compartidas y sin las
+         condiciones de seguridad y ventilación que la tarea exige.
+
+    
+  La pregunta que guió nuestro proyecto fue: ¿por qué estos dos espacios no pueden ser el
+mismo lugar? Si una biblioteca es donde las ideas se consultan, y un taller es donde las
+ideas se construyen, entonces la respuesta natural es un espacio donde las ideas se
+consultan, se diseñan y se construyen en la misma mesa.
+
+  Este informe documenta el relevamiento del espacio (E1), el diagnóstico de sus
+condiciones (E2), la justificación de la necesidad (E3) y la propuesta de mejora con su
+representación gráfica (E4).
+3. Relevamiento del espacio (E1)
+
+3.1 Ubicación en el edificio
+
+El espacio se encuentra en la planta baja del edificio escolar, en el sector [completar: ala
+este/oeste/sector central -- ver Plano N° 1: Planta de situación en Anexo]. Esta ubicación
+es estratégica para el nuevo uso porque:
+
+     Permite el ingreso de materiales y equipamiento sin depender de escaleras (los
+         Proyectos Integradores transportan herramientas, componentes y prototipos).
+
+     Lo hace accesible para estudiantes y docentes en los recreos y en horario de taller.
+     Facilita la ventilación y la instalación eléctrica desde el tablero general.
+3.2 Caracterización físico-constructiva
+
+ítem                 Valor relevado
+Superficie interior   36,00 m² (6,00 m × 6,00 m entre ejes de muro )
+
+Espesor de muros 0,25 m
+
+Altura piso­techo    h  4m volumen  144 m³
+
+Puerta               1,2m y 60cm cada una
+
+Ventanas             4 ventanas / 2 de puerta y un superior / la ventana de la pared
+
+Orientación          luz artificial
+
+Piso                 Losa artificial / personalizada
+
+Muros y cielorraso Pintura bien, poca humedad, durlock entre la aula y la biblioteca
+
+Instalación eléctrica 31 conexiones
+
+Instalación de datos/
+                                LLega la señal
+
+WiFi
+Mobiliario existente 21 elementos
+
+Colección            12m
+3.3 Uso actual del espacio
+
+Según lo relevado mediante:
+
+     Horario de apertura : desde que habre la institución .
+     Uso efectivo promedio:Todo el tiempo a veces por profes .
+     Actividades que aloja actualmente : buscar libros, uso de las pc
+
+Conclusión del relevamiento: el espacio tiene excelente potencial constructivo (planta baja,
+superficie generosa, muros sanos) pero está subutilizado en relación con las necesidades
+reales de la institución.
+
+3.4 Evidencia fotográfica
+
+Se adjunta registro fotográfico (Anexo A) que documenta: vista general desde la puerta,
+vista desde cada esquina, sector de estanterías, instalaciones eléctricas existentes, estado
+de piso y cielorraso, y aberturas.
+4. Diagnóstico : análisis FODA
+
+         Positivo                               Negativo
+
+         Ubicación en planta baja, accesible. Subutilización horaria. Colección
+
+         Superficie amplia (36 m²). Muros física desactualizada y con baja
+
+         perimetrales completos que permiten consulta. Sin puestos de
+
+Interno
+
+         colgar estanterías, paneles y          computación. Instalación eléctrica
+
+         equipamiento. Luz natural disponible. insuficiente para equipos. Sin puestos
+
+         Mobiliario bibliotecario reutilizable. aptos para tareas de precisión.
+
+         Necesidad institucional concreta: los
+
+         Proyectos Integradores de 7° año no Riesgo de percepción de "pérdida de
+
+         cuentan con espacio adecuado.          la biblioteca"  mitigado en el diseño,
+
+         Tendencia pedagógica internacional que conserva y jerarquiza la función
+
+Externo
+
+         hacia espacios maker/bibliotecas bibliotecaria (ver sección 9).
+
+         híbridas. Posibles fuentes de          Restricción presupuestaria general de
+
+         financiamiento (cooperadora,           la escuela.
+
+         municipio, empresas locales).
+5. Fundamentación de la propuesta (E3)
+
+5.1 El problema detectado
+
+El diagnóstico revela una incoherencia entre el uso del espacio y las necesidades
+pedagógicas de la institución:
+
+    1. Un espacio subutilizado. La biblioteca registra todas las horas de uso efectivo por
+         día.
+
+    2. Una necesidad sin espacio. Los estudiantes de 7° año realizan sus Proyectos
+         Integradores en aulas comunes: soldán sobre mesas de clase, sin extracción de
+         humos, sin puestos con energía segura, interrumpiendo las clases que comparten
+         sala.
+
+    3. Una brecha de equipamiento. La escuela no cuenta con una sala de informática en
+         la zona [completar], y las tareas digitales del ciclo superior (diseño, programación,
+         simulación) carecen de un lugar estable.
+
+5.2 Respaldo curricular y normativo
+
+La propuesta no es un deseo, es una necesidad institucional con respaldo normativo:
+
+     La Ley N° 26.058 de Educación Técnico Profesional establece que la formación
+         técnica debe garantizar instancias de práctica y producción real.
+
+     La Resolución CFE N° 254/15 aprueba los marcos de referencia del Proyecto
+         Integrador para 7° año, instancia curricular obligatoria que exige planificar, construir,
+         integrar y evaluar un producto tecnológico -- típicamente un dispositivo electrónico
+         que requiere soldadura, montaje y testeado.
+
+     Consecuencia: la escuela tiene la obligación institucional de garantizar condiciones
+         para el Proyecto Integrador, y hoy no dispone de un espacio equipado para ello.
+         CHISPA resuelve esa deuda pedagógica.
+5.3 Referentes del proyecto
+
+El modelo de biblioteca-maker / biblioteca de tercera generación está extendido en escuelas
+técnicas y universidades: espacios que combinan acervo documental con producción
+práctica y fabricación digital. Ejemplos aplicables a nuestro contexto: bibliotecas populares
+con clubes de ciencia, espacios maker de universidades nacionales, o el propio programa
+escolar que conozcan. CHISPA adapta este modelo a la escala y el presupuesto de una
+escuela secundaria.
+
+5.4 Principio rector
+
+"La biblioteca no desaparece: aprende a soldar."
+
+   La propuesta se plantea explícitamente como coexistencia gestionada: cada función tiene
+su zona, sus horarios y sus normas, y comparten una zona flexible central que las integra.
+6. Descripción de la propuesta de diseño
+
+6.1 Concepto
+
+Transformar el salón en un ambiente poli funcional zonificado, conservando el recinto (sin
+obra civil) y operando sobre tres variables: mobiliario, instalaciones y organización.
+
+6.2 Objetivos
+
+    1. Habilitar un taller de microsoldadura y electrónica con 6 puestos apto para los
+         Proyectos Integradores.
+
+    2. Incorporar una zona de informática con 4 puestos fijos + carga para notebooks
+         institucionales.
+
+    3. Conservar y jerarquizar la biblioteca con estanterías reorganizadas, mesa de lectura
+         y catálogo digital.
+
+    4. Generar una zona central flexible reconfigurable para trabajo grupal, extensión del
+         taller y exposiciones.
+
+    5. Resolver de manera profesional ventilación, iluminación y seguridad eléctrica.
+6.3 Zonificación
+
+Origen del trazado: esquina suroeste (sector de la puerta). Interiores 6,00 × 6,00 m.
+
+Zona                   Ubicación                       Superficie aprox.
+
+B -- Taller de         Franja oeste y esquina NO        10 m²
+microsoldadura
+
+A -- Biblioteca flexible Franja este                    12 m²
+
+C -- Informática       Muro sur, al este de la puerta   6 m²
+
+Zona flexible central  Centro del recinto               8 m²
+Circulación
+                       Eje desde puerta al centro; pasillos 
+                                                                             resto
+
+                       1,00 m
+
+   Justificación de la disposición: el taller se ubica lejos de la puerta (se controla el acceso a
+herramientas y solventes), junto a la ventana NO (aprovecha ventilación natural y luz); la
+biblioteca ocupa la franja más luminosa del este y queda visible al ingresar, reafirmando que
+el lugar sigue siendo también biblioteca; la informática se apoya en el muro sur cerca de la
+puerta (menor recorrido de cableado hacia el tablero) sin interferir el barrido de la puerta.
+6.4 Sector B -- Taller de microsoldadura (6 puestos)
+
+Elemento                       Cantidad       Medidas        Ubicación
+
+Banco murado de trabajo 1 (4 puestos)         2,80 × 0,70 × 0,90 h Muro oeste
+
+Banco bajo ventana             1 (2 puestos)  2,00 × 0,70 × 0,90 h Muro norte
+
+Panel de herramientas con                     2,00 × 0,90 h  Sobre banco oeste
+                                         1
+
+siluetas (metodología 5S)
+
+Vitrina metálica con llave                    0,90 × 0,45 × 1,80 h Muro oeste, extremo sur
+                                         1
+
+(herramientas, flux, solventes)
+
+Cajonera de componentes                       0,60 × 0,45 × 1,20 h Debajo de bancos
+                                         2
+
+(clasificador por valor/tipo)
+
+Estación de soldadura con
+
+control de temperatura         4              --             Sobre bancos
+
+(350­450 °C)
+
+Estación rework de aire                       --             Puesto elegido
+                                         1
+
+caliente (montaje superficial)
+
+Lámpara-lupa LED de brazo                     --             1 por puesto
+                                         6
+
+articulado
+
+Multímetro digital             4                                          1 cada 2 puestos (1 en
+                                              --
+
+                                                                          vitrina)
+
+Fuente de laboratorio 0­30 V 2                --             Sobre banco
+
+Mantel disipativo + pulsera    6 puestos      --             Todo puesto
+
+antiestática (protección ESD)
+Extractor de banco con filtro                            30­60 W      1 por banco, a la altura
+                                         2                            de la punta del cautín
+
+de carbón activado
+
+Los bancos serán construidos por los estudiantes del taller de la escuela (estructura de
+hierro o carpintería, según disponibilidad), con tablero de trabajo, refuerzo para soportar
+equipos y recorrido de canaleta. Esto reduce el presupuesto a costo de materiales y
+convierte la construcción del espacio en una actividad pedagógica en sí misma.
+
+6.5 Sector A -- Biblioteca flexible
+
+Elemento                                    Cantidad     Medidas      Ubicación
+
+Estanterías (reuso del mobiliario                        1,20 × 0,35 × 1,80 Muro este,
+                                            [completar]
+                                                         h c/u        ancladas al muro
+existente)
+
+Mesa de lectura/estudio                     1            1,60 × 0,80  Esquina NE, junto a
+                                                                      ventana
+
+Sillas ergonómicas                          4            --           Mesa de lectura
+
+Alfombra + sillón/lámpara de                1 set        --           Rincón de lectura
+piso (3.000 K cálida)
+
+PC de catálogo digital                                                             Extremo sur del
+                                            1            --
+
+(opac/planilla)                                                                    sector
+Cartelería con códigos QR por
+                                                         --           En estanterías
+                                            1 juego
+estante
+6.6 Sector C -- Informática
+
+Elemento                             Cantidad  Ubicación
+
+Mesa de trabajo                      1 (2,55 × 0,60 × 0,75 Muro sur, al este de la
+
+PC de escritorio completos           h)        puerta
+Carro de carga para 10­12 notebooks
+institucionales                      4         Sobre mesa
+
+                                     1         Junto a la mesa
+
+6.7 Zona flexible central
+
+     2 mesas plegables con ruedas (1,60 × 0,70), que se repliegan contra el muro para
+         liberar el espacio en modo recirculación/exposición.
+
+     TV 50" montada en muro norte (centro) como pizarra digital, pantalla para clases y
+         simulación de circuitos.
+
+     Uso simultáneo de la zona: hasta 8 estudiantes de pie o 4 sentados.
+
+6.8 Circulación y ergonomía
+
+     Eje diagonal de circulación puerta  centro, siempre libre.
+
+     Pasillos mínimos: 1,00 m entre bancos y mesas; 0,90 m frente a estanterías de
+         consulta.
+
+     Alturas de referencia: banco de trabajo 0,90 h (trabajo de pie/sentado con silla alta);
+         estanterías 1,80 h (alcance seguro); TV a 1,60 h; luminarias a 3,00 h (cielo).
+
+     Se conserva íntegro el barrido de la puerta batiente.
+7. Instalaciones proyectadas (memoria técnica)
+
+7.1 Instalación eléctrica
+
+Carga estimada (uso simultáneo pico):
+
+Rubro                               Potencia estimada
+Estaciones de soldadura (6 × 80 W)  480 W
+Estación rework (pico)              700 W
+Lámparas-lupa (6 × 8 W)             48 W
+Fuentes de laboratorio (2 × 100 W)  200 W
+PCs + monitores (4 × 250 W)         1.000 W
+TV 50"                              100 W
+Extractores (3 × 30­60 W)            160 W
+Iluminación (9 paneles × 40 W)      360 W
+Total simultáneo pico                3,05 kW
+
+Diseño: tablero seccional nuevo con cuatro circuitos:
+     TK1 (16 A) -- tomas del taller (bancos oeste y norte)
+     TK2 (16 A) -- informática + TV
+     TK3 (10 A) -- iluminación + extractores
+     TK4 -- reserva
+Protección: diferencial de 30 mA y puesta a tierra verificada o ejecutada (obligatorio para
+equipos electrónicos y seguridad de usuarios). Distribución en canaleta con tomas dobles: 8
+en banco oeste, 6 en banco norte, 5 en informática, 1 para TV. La ejecución estará a cargo
+de un electricista matriculado; el proyecto define puntos y potencia (ver Plano N° 5).
+
+7.2 Iluminación -- memoria de cálculo
+
+Objetivo: nivel de iluminación media  440­500 lux en plano de trabajo (tareas de estudio y
+precisión), conforme a los valores recomendados por normativa IRAM-AADL para aulas y
+oficinas; complementado con iluminación local de tarea en el taller.
+
+Datos: Área A = 36 m²
+
+· Luminarias: paneles LED 40 W,  = 4.000 lm c/u
+· Coeficiente de utilización CU = 0,55
+· Factor de mantenimiento MF = 0,8.
+
+Fórmula: E = (N ×  × CU × MF) / A
+Cálculo con 9 paneles en retícula 3×3 (3,00 m entre ejes):
+E = (9 × 4.000 × 0,55 × 0,8) / 36 = 440 lux
+
+El nivel general de 440 lux cumple el rango recomendado; las tareas de precisión
+(inspección de pistas, soldadura SMD) se realizan con la luz local de la lámpara-lupa
+(>1.000 lux en el punto de trabajo). Si la medición posterior arroja menos de 400 lux, se
+suman 3 paneles (retícula 3×4) alcanzando  585 lux.
+
+Temperatura de color e IRC:
+
+     5.000 K (luz neutra de inspección) en los paneles del sector taller -- necesaria para
+         distinguir bandas de colores de resistencias y códigos de cables.
+
+     4.000 K en el resto del ambiente.
+     3.000 K (cálida) en el rincón de lectura.
+     IRC  90 en todo el ambiente.
+7.3 Ventilación
+
+Problema: la soldadura genera humos de flux que no deben convivir con acervo bibliográfico
+ni con usuarios.
+
+Solución en tres niveles:
+
+    1. Extracción localizada: 2 extractores de banco con filtro de carbón activado,
+         posicionados a la altura de la punta del cautín (capturan el humo en la fuente).
+
+    2. Renovación general: extractor de techo/muro Ø 200 mm, caudal  500 m³/h. Con
+         volumen de  108 m³ equivale a  4,6 renovaciones de aire por hora (dentro del
+         rango recomendado de 4­6 para talleres livianos).
+
+    3. Ventilación cruzada natural por las ventanas de [muro] durante tareas sin soldadura.
+8. Seguridad e higiene
+
+Medida                   Detalle
+
+Extintor CO 5 kg         Junto a la puerta (fuegos eléctricos -- clase C). Recarga
+                         vigente y señalización
+
+Botiquín + lavaojos portátil Vitrina del taller
+
+Elementos de protección  Antiparras por puesto; pulseras antiestáticas
+personal
+                         Herramientas de riesgo, flux, solventes y alcohol
+Vitrina con llave        isopropílico bajo custodia docente
+
+Recipiente metálico con tapa Recortes de estaño y residuos de soldadura
+
+Contenedor RAEE / pilas  Separación de residuos electrónicos (gestión sustentable)
+
+Estanterías ancladas al muro Prevención de vuelco
+                                           Cartel visible: pautas de turno, uso de EPP, qué se puede
+
+Reglamento de uso del taller
+                                           usar sin docente
+
+Pasillos  0,90 m y libre barrido
+                                           Evacuación garantizada
+
+de puerta
+9. Gestión de la colección bibliográfica
+
+ El punto más sensible de la propuesta es la convivencia con la función biblioteca. Nuestra
+respuesta es una política de gestión, no una reducción:
+
+    1. Descarte técnico participativo: junto con la bibliotecaria se releva la colección para
+         identificar ejemplares obsoletos o duplicados [completar: ejemplares estimados]. Los
+         descartados se donarán a bibliotecas populares o centros comunitarios, extendiendo
+         el impacto social del proyecto.
+
+    2. Reorganización: la colección vigente se reubica en el sector este, con metros
+         lineales disponibles según relevamiento.
+
+    3. Modernización de la consulta: catálogo digital con códigos QR por estante: el usuario
+         escanea y encuentra el material sin recorrer la sala; agiliza la consulta y permite
+         administrar mejor el espacio.
+
+    4. Jerarquización del rincón de lectura: la propuesta agrega algo que la biblioteca
+         actual no tiene: un rincón confortable (alfombra, lámpara cálida, mesa de lectura
+         junto a la ventana).
+
+    5. Coordinación institucional: la bibliotecaria integra el equipo de gestión del espacio y
+         define los horarios de cada función.
+
+ Principio: un libro consultado y una placa soldada ocurren a metros de distancia, en el
+mismo edificio y con el mismo espíritu: formar pensando y haciendo.
+
+9.1. Sostenibilidad del proyecto
+
+Económica: fases progresivas + autofinanciación por servicio técnico.
+
+     Ambiental: reuso del 100 % del mobiliario bibliotecario; descarte donado (no
+         descartado); contenedor RAEE; iluminación LED de bajo consumo; ventilación
+         mayormente natural.
+
+     Social: construcción del mobiliario por los propios estudiantes; donación de libros;
+         reparación a la comunidad.
+
+     Institucional: reglamento de uso y roles definidos garantizan la operación más allá
+         del equipo proyectista.
+10. Conclusión
+
+   Nuestro trabajo comenzó con una pregunta sencilla: ¿por qué la biblioteca y el taller no
+pueden ser el mismo lugar? Después de relevar el espacio, diagnosticar sus condiciones y
+diseñar la propuesta, la respuesta que deja CHISPA es clara: no sólo pueden coexistir, sino
+que su convivencia planificada resuelve dos problemas a la vez.
+
+    El relevamiento (E1) mostró un espacio con excelente potencial constructivo --planta
+baja, superficie de 36 m², muros sanos, 31 conexiones eléctricas-- pero subutilizado en
+relación con las necesidades reales de la institución. El diagnóstico (E2) confirmó esa
+incoherencia: mientras la biblioteca registra baja ocupación, los estudiantes de 7° año hacen
+soldadura sobre mesas improvisadas, sin ventilación adecuada ni energía segura. CHISPA
+resuelve esa deuda pedagógica con respaldo normativo (Ley N° 26.058 y Resolución CFE
+N° 254/15) y sin obra civil, operando solo sobre tres variables: mobiliario, instalaciones y
+organización.
+
+  En el plano técnico, la propuesta responde punto por punto a las exigencias relevadas:
+instalación eléctrica con tablero seccional de cuatro circuitos y protección diferencial para
+una carga pico de  3,05 kW; iluminación calculada para alcanzar 440 lux conforme a
+normativa IRAM-AADL, complementada con luz de tarea en cada puesto; ventilación en tres
+niveles que evita que los humos de soldadura convivan con las personas ni con el acervo
+bibliográfico; y seguridad e higiene garantizadas con extinción, EPP, custodia de materiales
+y reglamento de uso. La zonificación --taller de microsoldadura, biblioteca flexible,
+informática y zona central reconfigurable-- materializa el principio rector enunciado al inicio:
+"la biblioteca no desaparece: aprende a soldar".
+  Más allá de lo técnico, el mayor aporte del proyecto es pedagógico. Los bancos de trabajo
+serán construidos por los propios estudiantes en el taller de la escuela; el catálogo digital
+con códigos QR jerarquiza la consulta; y el descarte técnico participativo convierte libros
+que ya no se consultan en donaciones con impacto social. La construcción del espacio es,
+en sí misma, una instancia de aprendizaje, y su sostenibilidad económica, ambiental, social
+e institucional asegura que CHISPA funcione más allá del equipo que lo proyectó.
+
+Si algo demuestra este trabajo es que transformar la escuela no exige grandes obras ni
+presupuestos inalcanzables: exige mirar críticamente lo que ya tenemos, diagnosticar con
+rigor y proponer con creatividad. Una biblioteca donde las ideas se consultan y un taller
+donde las ideas se construyen son, en CHISPA, el mismo lugar. Ese es, finalmente, el
+espíritu del proyecto: una chispa que enciende la posibilidad de seguir mejorando nuestra
+escuela, formando pensando y haciendo.
+11. ANEXOS
+
+Anexo A: Registro fotográfico del espacio actual
+Anexo B: Planos -- Plano N° 1 Planta de situación · Plano N° 2 Planta de relevamiento
+(1:50) · Plano N° 3 Planta de propuesta zonificada (1:50) · Plano N° 4 Instalaciones (1:50)
+Plano N°1
+
+Plano N°2
+Plano N°3
+
+Anexo C: Renders 3D (modelo en proceso -- vistas: general, y renders)
+V.S.
+V.F.
+Vistas isométricas :
+Render
+Una mejor expectativa del diseño en 3d / render / ia
+

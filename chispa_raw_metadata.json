@@ -1,0 +1,526 @@
+{
+  "format_version": "1.0",
+  "source_file": "chispa_raw",
+  "model_source": "sketchup",
+  "sketchup_version": "{26.0.429}",
+  "instanced": true,
+  "total_mesh_resources": 15,
+  "total_layers": 1,
+  "layers": [
+    {
+      "name": "Layer0",
+      "color": {
+        "r": 255,
+        "g": 255,
+        "b": 255
+      }
+    }
+  ],
+  "layer_hidden": {
+    "Layer0": false
+  },
+  "bounds": {
+    "min": [
+      -0.09205060651178586,
+      0.0,
+      -5.963284015655518
+    ],
+    "max": [
+      9.169923782348633,
+      3.7012579441070557,
+      1.0451812744140625
+    ],
+    "size": [
+      9.261974388860418,
+      3.7012579441070557,
+      7.00846529006958
+    ],
+    "center": [
+      4.538936587918424,
+      1.8506289720535278,
+      -2.4590513706207275
+    ]
+  },
+  "mesh_resources": [
+    {
+      "id": "mesh_0",
+      "definition_id": "50463",
+      "definition_name": "CHISPA",
+      "variant_key": "50463|255,255,255",
+      "primitive_count": 1
+    },
+    {
+      "id": "mesh_1",
+      "definition_id": "52741",
+      "definition_name": "Bottom",
+      "variant_key": "52741|132,77,33",
+      "primitive_count": 1
+    },
+    {
+      "id": "mesh_2",
+      "definition_id": "52768",
+      "definition_name": "Left",
+      "variant_key": "52768|132,77,33",
+      "primitive_count": 1
+    },
+    {
+      "id": "mesh_3",
+      "definition_id": "52876",
+      "definition_name": "Shelf",
+      "variant_key": "52876|132,77,33",
+      "primitive_count": 1
+    },
+    {
+      "id": "mesh_4",
+      "definition_id": "52849",
+      "definition_name": "Top",
+      "variant_key": "52849|132,77,33",
+      "primitive_count": 1
+    },
+    {
+      "id": "mesh_5",
+      "definition_id": "52822",
+      "definition_name": "Right",
+      "variant_key": "52822|132,77,33",
+      "primitive_count": 1
+    },
+    {
+      "id": "mesh_6",
+      "definition_id": "52795",
+      "definition_name": "Back",
+      "variant_key": "52795|132,77,33",
+      "primitive_count": 1
+    },
+    {
+      "id": "mesh_7",
+      "definition_id": "53106",
+      "definition_name": "L E D",
+      "variant_key": "53106|255,255,255",
+      "primitive_count": 1
+    },
+    {
+      "id": "mesh_8",
+      "definition_id": "53698",
+      "definition_name": "Pizzara",
+      "variant_key": "53698|255,255,255",
+      "primitive_count": 1
+    },
+    {
+      "id": "mesh_9",
+      "definition_id": "55112",
+      "definition_name": "TV",
+      "variant_key": "55112|255,255,255",
+      "primitive_count": 1
+    },
+    {
+      "id": "mesh_10",
+      "definition_id": "55236",
+      "definition_name": "AIRE",
+      "variant_key": "55236|255,255,255",
+      "primitive_count": 1
+    },
+    {
+      "id": "mesh_11",
+      "definition_id": "58164",
+      "definition_name": "Iluminación",
+      "variant_key": "58164|255,255,255",
+      "primitive_count": 1
+    },
+    {
+      "id": "mesh_12",
+      "definition_id": "60644",
+      "definition_name": "Fichero / pizarr",
+      "variant_key": "60644|0,0,0",
+      "primitive_count": 1
+    },
+    {
+      "id": "mesh_13",
+      "definition_id": "63887",
+      "definition_name": "BALSEIRO",
+      "variant_key": "63887|255,255,255",
+      "primitive_count": 1
+    },
+    {
+      "id": "mesh_14",
+      "definition_id": "ROOT",
+      "definition_name": "ROOT_MODEL",
+      "variant_key": "ROOT|255,255,255",
+      "primitive_count": 21
+    }
+  ],
+  "scene_hierarchy": {
+    "name": "ROOT",
+    "definition_name": "ROOT_MODEL",
+    "layer": "Layer0",
+    "position_mm": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "properties": {},
+    "attribute_dictionaries": {},
+    "mesh_resource_id": "mesh_14",
+    "children": [
+      {
+        "name": "CHISPA",
+        "definition_name": "CHISPA",
+        "layer": "Layer0",
+        "position_mm": [
+          5353.34,
+          -75.49,
+          3086.92
+        ],
+        "properties": {},
+        "attribute_dictionaries": {},
+        "mesh_resource_id": "mesh_0",
+        "children": []
+      },
+      {
+        "name": "Basic Shelving Unit",
+        "definition_name": "Basic Shelving Unit",
+        "layer": "Layer0",
+        "position_mm": [
+          3279.32,
+          5556.68,
+          195.02
+        ],
+        "properties": {},
+        "attribute_dictionaries": {},
+        "mesh_resource_id": null,
+        "children": [
+          {
+            "name": "Bottom",
+            "definition_name": "Bottom",
+            "layer": "Layer0",
+            "position_mm": [
+              4174.67,
+              5556.68,
+              214.07
+            ],
+            "properties": {
+              "_formatversion": "1.0",
+              "_has_movetool_behaviors": "1.0",
+              "_hasbehaviors": "1.0",
+              "_iscollapsed": "true",
+              "_lastmodified": "2008-09-01 13:46",
+              "_name": "Bottom",
+              "_rotx_error": "",
+              "_roty_error": "",
+              "_rotz_error": "",
+              "_x_error": "<span class=subformula-success>36</span>+-1*<span class=subformula-success>.75</span>",
+              "_x_formula": "Bookshelf!CabinetWidth-Bookshelf!MatlThickness",
+              "_x_label": "X",
+              "_y_error": "",
+              "_y_label": "Y",
+              "_z_error": "<span class=subformula-success>.75</span>",
+              "_z_formula": "Bookshelf!MatlThickness",
+              "_z_label": "Z",
+              "lenx": "34.5",
+              "leny": "12.0",
+              "lenz": "0.75",
+              "x": "35.25",
+              "y": "0.0",
+              "z": "0.75"
+            },
+            "attribute_dictionaries": {},
+            "mesh_resource_id": "mesh_1",
+            "children": []
+          },
+          {
+            "name": "Left",
+            "definition_name": "Left",
+            "layer": "Layer0",
+            "position_mm": [
+              3298.37,
+              5556.68,
+              195.02
+            ],
+            "properties": {
+              "_formatversion": "1.0",
+              "_has_movetool_behaviors": "1.0",
+              "_hasbehaviors": "1.0",
+              "_iscollapsed": "true",
+              "_lastmodified": "2008-09-01 13:46",
+              "_name": "Left",
+              "_rotx_error": "",
+              "_roty_error": "",
+              "_rotz_error": "",
+              "_x_error": "<span class=subformula-success>.75</span>",
+              "_x_formula": "Bookshelf!MatlThickness",
+              "_x_label": "X",
+              "_y_error": "",
+              "_y_label": "Y",
+              "_z_error": "",
+              "_z_label": "Z",
+              "lenx": "30.0",
+              "leny": "12.0",
+              "lenz": "0.75",
+              "x": "0.75",
+              "y": "0.0",
+              "z": "5.551115123125783e-16"
+            },
+            "attribute_dictionaries": {},
+            "mesh_resource_id": "mesh_2",
+            "children": []
+          },
+          {
+            "name": "Shelf",
+            "definition_name": "Shelf",
+            "layer": "Layer0",
+            "position_mm": [
+              3298.37,
+              5556.68,
+              566.5
+            ],
+            "properties": {
+              "_copies_error": "1+-1",
+              "_copies_formula": "Floor(Bookshelf!CabinetHeight/18)-1",
+              "_copies_label": "Copies",
+              "_copy_error": "",
+              "_formatversion": "1.0",
+              "_has_movetool_behaviors": "1.0",
+              "_hasbehaviors": "1.0",
+              "_iscollapsed": "true",
+              "_lastmodified": "2008-09-01 13:46",
+              "_lengthunits": "INCHES",
+              "_name": "Shelf",
+              "_rotx_error": "",
+              "_roty_error": "",
+              "_rotz_error": "",
+              "_x_error": "<span class=subformula-success>.75</span>",
+              "_x_formula": "Bookshelf!MatlThickness",
+              "_x_label": "X",
+              "_y_error": "",
+              "_y_label": "Y",
+              "_z_error": "15.0+-1*<span class=subformula-success>.75</span>/2",
+              "_z_formula": "(((copy+1)/(Copies+2))*Bookshelf!CabinetHeight)-Bookshelf!MatlThickness/2",
+              "_z_label": "Z",
+              "copies": "0.0",
+              "hidden": "0.0",
+              "lenx": "34.5",
+              "leny": "12.0",
+              "lenz": "0.75",
+              "x": "0.75",
+              "y": "0.0",
+              "z": "14.625"
+            },
+            "attribute_dictionaries": {},
+            "mesh_resource_id": "mesh_3",
+            "children": []
+          },
+          {
+            "name": "Top",
+            "definition_name": "Top",
+            "layer": "Layer0",
+            "position_mm": [
+              3298.37,
+              5556.68,
+              937.97
+            ],
+            "properties": {
+              "_formatversion": "1.0",
+              "_has_movetool_behaviors": "1.0",
+              "_hasbehaviors": "1.0",
+              "_iscollapsed": "true",
+              "_lastmodified": "2008-09-01 13:46",
+              "_name": "Top",
+              "_rotx_error": "",
+              "_roty_error": "",
+              "_rotz_error": "",
+              "_x_error": "<span class=subformula-success>.75</span>",
+              "_x_formula": "Bookshelf!MatlThickness",
+              "_x_label": "X",
+              "_y_error": "",
+              "_y_label": "Y",
+              "_z_error": "<span class=subformula-success>30</span>+-1*<span class=subformula-success>.75</span>",
+              "_z_formula": "Bookshelf!CabinetHeight-Bookshelf!MatlThickness",
+              "_z_label": "Z",
+              "lenx": "34.5",
+              "leny": "12.0",
+              "lenz": "0.75",
+              "x": "0.75",
+              "y": "0.0",
+              "z": "29.25"
+            },
+            "attribute_dictionaries": {},
+            "mesh_resource_id": "mesh_4",
+            "children": []
+          },
+          {
+            "name": "Right",
+            "definition_name": "Right",
+            "layer": "Layer0",
+            "position_mm": [
+              4174.67,
+              5556.68,
+              957.02
+            ],
+            "properties": {
+              "_formatversion": "1.0",
+              "_has_movetool_behaviors": "1.0",
+              "_hasbehaviors": "1.0",
+              "_iscollapsed": "true",
+              "_lastmodified": "2008-09-01 13:46",
+              "_name": "Right",
+              "_rotx_error": "",
+              "_roty_error": "",
+              "_rotz_error": "",
+              "_x_error": "<span class=subformula-success>36</span>+-1*<span class=subformula-success>.75</span>",
+              "_x_formula": "Bookshelf!CabinetWidth-Bookshelf!MatlThickness",
+              "_x_label": "X",
+              "_y_error": "",
+              "_y_label": "Y",
+              "_z_error": "<span class=subformula-success>30</span>",
+              "_z_formula": "Bookshelf!CabinetHeight",
+              "_z_label": "Z",
+              "lenx": "30.0",
+              "leny": "12.0",
+              "lenz": "0.75",
+              "x": "35.25",
+              "y": "0.0",
+              "z": "30.0"
+            },
+            "attribute_dictionaries": {},
+            "mesh_resource_id": "mesh_5",
+            "children": []
+          },
+          {
+            "name": "Back",
+            "definition_name": "Back",
+            "layer": "Layer0",
+            "position_mm": [
+              3279.32,
+              5861.48,
+              195.02
+            ],
+            "properties": {
+              "_formatversion": "1.0",
+              "_has_movetool_behaviors": "1.0",
+              "_hasbehaviors": "1.0",
+              "_iscollapsed": "true",
+              "_lastmodified": "2008-09-01 13:46",
+              "_name": "Back",
+              "_rotx_error": "",
+              "_roty_error": "",
+              "_rotz_error": "",
+              "_x_error": "",
+              "_x_label": "X",
+              "_y_error": "<span class=subformula-success>12.0</span>",
+              "_y_formula": "Bookshelf!LenY",
+              "_y_label": "Y",
+              "_z_error": "",
+              "_z_label": "Z",
+              "lenx": "36.0",
+              "leny": "0.25",
+              "lenz": "30.0",
+              "x": "0",
+              "y": "12.0",
+              "z": "1.757996526130512e-12"
+            },
+            "attribute_dictionaries": {},
+            "mesh_resource_id": "mesh_6",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "L E D",
+        "definition_name": "L E D",
+        "layer": "Layer0",
+        "position_mm": [
+          447.04,
+          -254.09,
+          1689.56
+        ],
+        "properties": {},
+        "attribute_dictionaries": {},
+        "mesh_resource_id": "mesh_7",
+        "children": []
+      },
+      {
+        "name": "Pizzara",
+        "definition_name": "Pizzara",
+        "layer": "Layer0",
+        "position_mm": [
+          6718.31,
+          5863.48,
+          2106.94
+        ],
+        "properties": {},
+        "attribute_dictionaries": {},
+        "mesh_resource_id": "mesh_8",
+        "children": []
+      },
+      {
+        "name": "TV",
+        "definition_name": "TV",
+        "layer": "Layer0",
+        "position_mm": [
+          9001.15,
+          3373.25,
+          2362.95
+        ],
+        "properties": {},
+        "attribute_dictionaries": {},
+        "mesh_resource_id": "mesh_9",
+        "children": []
+      },
+      {
+        "name": "AIRE",
+        "definition_name": "AIRE",
+        "layer": "Layer0",
+        "position_mm": [
+          8667.7,
+          3560.86,
+          3364.67
+        ],
+        "properties": {},
+        "attribute_dictionaries": {},
+        "mesh_resource_id": "mesh_10",
+        "children": []
+      },
+      {
+        "name": "Iluminación",
+        "definition_name": "Iluminación",
+        "layer": "Layer0",
+        "position_mm": [
+          6502.75,
+          188.82,
+          3325.66
+        ],
+        "properties": {},
+        "attribute_dictionaries": {},
+        "mesh_resource_id": "mesh_11",
+        "children": []
+      },
+      {
+        "name": "Fichero / pizarr",
+        "definition_name": "Fichero / pizarr",
+        "layer": "Layer0",
+        "position_mm": [
+          -66.65,
+          3679.17,
+          2363.73
+        ],
+        "properties": {},
+        "attribute_dictionaries": {},
+        "mesh_resource_id": "mesh_12",
+        "children": []
+      },
+      {
+        "name": "BALSEIRO",
+        "definition_name": "BALSEIRO",
+        "layer": "Layer0",
+        "position_mm": [
+          0.0,
+          3970.45,
+          475.9
+        ],
+        "properties": {},
+        "attribute_dictionaries": {},
+        "mesh_resource_id": "mesh_13",
+        "children": []
+      }
+    ]
+  }
+}

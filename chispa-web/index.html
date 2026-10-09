@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CHISPA — Biblioteca + Taller de Microelectrónica | IPET N°66</title>
+  <meta name="description" content="Proyecto CHISPA: transformación de la biblioteca del Instituto José Antonio Balseiro (IPET N°66) en un espacio híbrido de aprendizaje. Explorá el modelo 3D interactivo." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M18 2 6 18h8l-2 12L26 12h-9z' fill='%23FFB300'/%3E%3C/svg%3E" />
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="top">
+    <a class="brand" href="#inicio">
+      <svg class="brand-spark" viewBox="0 0 32 32" aria-hidden="true"><path d="M18 2 6 18h8l-2 12L26 12h-9z"/></svg>
+      <span>CHISPA</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#visor">Modelo 3D</a>
+      <a href="#proyecto">El proyecto</a>
+      <a href="#propuesta">Propuesta</a>
+      <a href="#instalaciones">Instalaciones</a>
+      <a href="#equipo">Equipo</a>
+    </nav>
+    <a class="nav-cta" href="#visor">Explorar en 3D</a>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="inicio">
+    <canvas id="sparks" aria-hidden="true"></canvas>
+    <div class="hero-inner">
+      <p class="hero-kicker reveal">Proyecto Integrador · Proyecto escuela · 6.º A · 2026</p>
+      <h1 class="hero-title reveal">
+        <span class="hero-word">CHISPA</span>
+      </h1>
+      <p class="hero-tag reveal">La biblioteca no desaparece: <em>aprende a soldar</em>.</p>
+      <p class="hero-sub reveal">
+        Transformamos la biblioteca de la escuela —36 m² en planta baja— en un espacio híbrido de
+        aprendizaje: <strong>Biblioteca + Taller de Microelectrónica + Informática</strong>, con una
+        zona central flexible que se reconfigura para cada actividad.
+      </p>
+      <div class="hero-actions reveal">
+        <a class="btn btn-primary" href="#visor">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 8v8l8 5 8-5V8l-8-5zm0 2.3L18 9v6l-6 3.7L6 15V9l6-3.7z"/></svg>
+          Ver el modelo 3D
+        </a>
+        <a class="btn btn-ghost" href="#proyecto">Leer el informe</a>
+      </div>
+      <dl class="hero-stats reveal">
+        <div><dt>36 m²</dt><dd>intervienen sin obra civil</dd></div>
+        <div><dt>3 zonas</dt><dd>+ zona flexible central</dd></div>
+        <div><dt>6 puestos</dt><dd>de microsoldadura</dd></div>
+        <div><dt>440 lux</dt><dd>calculados para estudio</dd></div>
+      </dl>
+    </div>
+    <a class="hero-scroll" href="#visor" aria-label="Bajar al visor 3D"><span></span></a>
+  </section>
+
+  <!-- ============ VISOR 3D ============ -->
+  <section class="viewer-section" id="visor">
+    <div class="section-head">
+      <p class="kicker reveal">E4 · Representación gráfica</p>
+      <h2 class="reveal">Recorré el modelo <span class="accent">3D interactivo</span></h2>
+      <p class="section-lead reveal">
+        Modelo del recinto intervenido, desarrollado en SketchUp por el equipo.
+        <strong>Girá con el mouse, desplazate con clic derecho y acercate con la rueda.</strong>
+      </p>
+    </div>
+
+    <div class="viewer-shell reveal">
+      <div class="viewer-frame">
+        <div id="viewer" class="viewer" tabindex="0" aria-label="Visor 3D del modelo CHISPA. Arrastrar para rotar, rueda para acercar.">
+          <div class="viewer-loading" id="viewerLoading">
+            <svg class="loader-spark" viewBox="0 0 32 32"><path d="M18 2 6 18h8l-2 12L26 12h-9z"/></svg>
+            <p>Cargando modelo <strong>3D</strong>… <span id="loadPct">0%</span></p>
+          </div>
+          <div class="viewer-hint" id="viewerHint">
+            <span class="hint-mouse"></span> Arrastrá para girar · clic derecho para moverte · rueda para acercar
+          </div>
+        </div>
+
+        <div class="viewer-toolbar" role="toolbar" aria-label="Vistas del modelo">
+          <div class="tool-group" id="viewPresets">
+            <button class="tool-btn active" data-view="general">Vista general</button>
+            <button class="tool-btn" data-view="taller">Taller · B</button>
+            <button class="tool-btn" data-view="biblioteca">Biblioteca · A</button>
+            <button class="tool-btn" data-view="informatica">Informática · C</button>
+            <button class="tool-btn" data-view="flexible">Zona flexible</button>
+          </div>
+          <div class="tool-group">
+            <button class="tool-btn toggle" id="btnRotate" aria-pressed="false">Girar</button>
+            <button class="tool-btn toggle" id="btnCut" aria-pressed="false">Corte</button>
+            <button class="tool-btn toggle" id="btnLabels" aria-pressed="true">Etiquetas</button>
+            <button class="tool-btn toggle" id="btnFull" aria-pressed="false">Pantalla completa</button>
+          </div>
+        </div>
+      </div>
+      <p class="viewer-note">Modelo: <em>BIBLIOTECA-TCI.skp</em> · SketchUp 2026 · exportado a glTF para la web.</p>
+    </div>
+  </section>
+
+  <!-- ============ RESUMEN / PROYECTO ============ -->
+  <section class="section" id="proyecto">
+    <div class="section-head">
+      <p class="kicker reveal">1 · Resumen ejecutivo</p>
+      <h2 class="reveal">Una chispa entre <span class="accent">libros y circuitos</span></h2>
+      <p class="section-lead reveal">
+        Los Proyectos Integradores de 7.º año necesitan soldar, medir y probar prototipos, y hoy lo hacen
+        sobre mesas improvisadas. Mientras tanto, la biblioteca funciona muy por debajo de su potencial.
+        <strong>¿Y si fueran el mismo lugar?</strong>
+      </p>
+    </div>
+
+    <div class="cards-3">
+      <article class="card reveal">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5v-15zm2.5-.5a.5.5 0 0 0-.5.5V17h12V5H6.5z"/></svg>
+        </div>
+        <h3>El problema</h3>
+        <p>Un espacio subutilizado (la biblioteca, casi sin consulta presencial) convive con una necesidad sin
+          espacio: estudiantes de 7.º año soldando sobre bancos improvisados, sin extracción de humos ni
+          energía segura, y sin sala de informática estable.</p>
+      </article>
+      <article class="card reveal">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24"><path d="M13 2 3 14h7l-1 8L19 10h-7l1-8z"/></svg>
+        </div>
+        <h3>La idea</h3>
+        <p>CHISPA integra en vez de reemplazar: tres zonas —biblioteca flexible, taller de microsoldadura e
+          informática— comparten una zona central con mobiliario móvil que se reconfigura para estudiar,
+          leer, construir o exponer.</p>
+      </article>
+      <article class="card reveal">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 15h-2v-2h2zm0-4h-2V7h2z"/></svg>
+        </div>
+        <h3>La viabilidad</h3>
+        <p>Sin obra civil: se opera sobre mobiliario, instalaciones y organización. Se reutilizan estanterías,
+          los bancos los construyen los propios estudiantes y el presupuesto se organiza en tres fases
+          progresivas con financiamiento identificado.</p>
+      </article>
+    </div>
+
+    <!-- Relevamiento -->
+    <div class="subsection" id="relevamiento">
+      <p class="kicker reveal">2 · Relevamiento del espacio (E1)</p>
+      <h3 class="reveal">Lo que la escuela ya tiene</h3>
+      <div class="stats-grid">
+        <div class="stat reveal"><span class="stat-num" data-count="36" data-decimals="0">0</span><span class="stat-unit">m²</span><p>interiores (6,00 × 6,00 m entre ejes)</p></div>
+        <div class="stat reveal"><span class="stat-num" data-count="4" data-decimals="0">0</span><span class="stat-unit">m</span><p>altura piso–techo · ≈144 m³</p></div>
+        <div class="stat reveal"><span class="stat-num" data-count="31" data-decimals="0">0</span><span class="stat-unit">conexiones</span><p>eléctricas existentes</p></div>
+        <div class="stat reveal"><span class="stat-num" data-count="21" data-decimals="0">0</span><span class="stat-unit">elementos</span><p>de mobiliario reutilizable</p></div>
+        <div class="stat reveal"><span class="stat-num" data-count="12" data-decimals="0">0</span><span class="stat-unit">m</span><p>lineales de colección bibliográfica</p></div>
+        <div class="stat reveal"><span class="stat-num" data-count="4" data-decimals="0">0</span><span class="stat-unit">ventanas</span><p>luz natural y ventilación cruzada</p></div>
+      </div>
+      <p class="footnote reveal">Planta baja · muros de 0,25 m sanos · puerta batiente de 1,20 m · WiFi con señal · Conclusion del relevamiento: excelente potencial constructivo, hoy subutilizado.</p>
+    </div>
+
+    <!-- FODA -->
+    <div class="subsection" id="foda">
+      <p class="kicker reveal">3 · Diagnóstico</p>
+      <h3 class="reveal">Análisis <span class="accent">FODA</span></h3>
+      <div class="foda-grid">
+        <div class="foda foda-f reveal"><h4>Fortalezas <small>interno · positivo</small></h4>
+          <ul><li>Planta baja, accesible</li><li>Superficie amplia (36 m²)</li><li>Muros perimetrales completos: estanterías, paneles, equipamiento</li><li>Luz natural disponible</li><li>Mobiliario bibliotecario reutilizable</li></ul></div>
+        <div class="foda foda-o reveal"><h4>Oportunidades <small>externo · positivo</small></h4>
+          <ul><li>Necesidad concreta: los Proyectos Integradores no tienen espacio</li><li>Tendencia internacional hacia espacios maker / bibliotecas híbridas</li><li>Fuentes de financiamiento: cooperadora, municipio, empresas locales</li></ul></div>
+        <div class="foda foda-d reveal"><h4>Debilidades <small>interno · negativo</small></h4>
+          <ul><li>Subutilización horaria</li><li>Colección desactualizada y de baja consulta</li><li>Sin puestos de computación</li><li>Instalación eléctrica insuficiente</li><li>Sin puestos aptos para tareas de precisión</li></ul></div>
+        <div class="foda foda-a reveal"><h4>Amenazas <small>externo · negativo</small></h4>
+          <ul><li>Percepción de "pérdida de la biblioteca" — mitigada en el diseño (ver sección 9 del informe)</li><li>Restricción presupuestaria general de la escuela</li></ul></div>
+      </div>
+    </div>
+
+    <!-- Fundamentación -->
+    <div class="subsection" id="fundamentacion">
+      <p class="kicker reveal">4 · Fundamentación (E3)</p>
+      <h3 class="reveal">No es un deseo: es una <span class="accent">obligación institucional</span></h3>
+      <div class="laws">
+        <div class="law reveal">
+          <h4>Ley N.º 26.058 — Educación Técnico Profesional</h4>
+          <p>La formación técnica debe garantizar instancias de <em>práctica y producción real</em>.</p>
+        </div>
+        <div class="law reveal">
+          <h4>Resolución CFE N.º 254/15 — Proyecto Integrador</h4>
+          <p>7.º año exige planificar, construir, integrar y evaluar un producto tecnológico: típicamente un
+            dispositivo electrónico que requiere <em>soldadura, montaje y testeado</em>.</p>
+        </div>
+      </div>
+      <blockquote class="quote reveal">
+        «Si una biblioteca es donde las ideas se consultan y un taller es donde las ideas se construyen,
+        entonces la respuesta natural es un espacio donde las ideas se <strong>consultan, se diseñan y se
+        construyen en la misma mesa</strong>.»
+        <cite>— Introducción del informe</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ============ PROPUESTA / ZONAS ============ -->
+  <section class="section section-alt" id="propuesta">
+    <div class="section-head">
+      <p class="kicker reveal">5 · Descripción de la propuesta</p>
+      <h2 class="reveal">Un ambiente, <span class="accent">cuatro zonas</span></h2>
+      <p class="section-lead reveal">
+        Concepto: transformar el salón en un ambiente polifuncional zonificado, <strong>conservando el recinto
+        (sin obra civil)</strong> y operando sobre tres variables: mobiliario, instalaciones y organización.
+        Tocá cada zona del plano para ver su equipamiento, o pasala por el modelo 3D.
+      </p>
+    </div>
+
+    <div class="plan-layout">
+      <div class="plan-wrap reveal">
+        <svg id="floorplan" viewBox="0 0 640 500" role="img" aria-label="Plano de zonificación según el modelo 3D">
+          <!-- pórtico (sur-este, fuera del muro) -->
+          <rect x="222" y="389" width="331" height="46" class="plan-porch"/>
+          <rect x="440" y="395" width="112" height="28" class="plan-furn"/>
+          <text x="300" y="420" class="plan-label">pórtico con banco</text>
+          <!-- muros + recinto (interiores 9,00 × 5,95 m según el modelo) -->
+          <rect x="40" y="40" width="520" height="349" class="plan-wall"/>
+          <rect x="48" y="48" width="504" height="333" class="plan-room"/>
+          <!-- cotas (como en el plano real: 9,00 × 5,95 m) -->
+          <g class="plan-dims">
+            <line x1="48" y1="20" x2="552" y2="20" class="plan-dim"/>
+            <line x1="48" y1="14" x2="48" y2="26" class="plan-dim-tick"/>
+            <line x1="552" y1="14" x2="552" y2="26" class="plan-dim-tick"/>
+            <text x="300" y="15" class="plan-dim-text" text-anchor="middle">9,00 m</text>
+            <line x1="572" y1="48" x2="572" y2="381" class="plan-dim"/>
+            <line x1="566" y1="48" x2="578" y2="48" class="plan-dim-tick"/>
+            <line x1="566" y1="381" x2="578" y2="381" class="plan-dim-tick"/>
+            <text x="584" y="214" class="plan-dim-text" text-anchor="middle" transform="rotate(-90 584 214)">5,95 m</text>
+          </g>
+          <!-- ventanas: norte (larga) y sur (teal, sobre el pórtico) -->
+          <line x1="115" y1="44" x2="524" y2="44" class="plan-window"/>
+          <line x1="222" y1="385" x2="524" y2="385" class="plan-window-teal"/>
+          <text x="320" y="34" class="plan-label">ventana norte</text>
+          <text x="373" y="376" class="plan-label">ventana sur</text>
+          <!-- puerta doble batiente en la esquina SO (como el plano real) -->
+          <line x1="48" y1="385" x2="131" y2="385" class="plan-door"/>
+          <path d="M 48 343.5 A 41.5 41.5 0 0 1 89.5 385" class="plan-door-swing"/>
+          <line x1="48" y1="385" x2="48" y2="343.5" class="plan-door-swing"/>
+          <path d="M 131 343.5 A 41.5 41.5 0 0 0 89.5 385" class="plan-door-swing"/>
+          <line x1="131" y1="385" x2="131" y2="343.5" class="plan-door-swing"/>
+          <text x="40" y="452" class="plan-label">puerta doble</text>
+          <!-- puerta secundaria (junto a la doble, como el plano real) -->
+          <line x1="152" y1="385" x2="188" y2="385" class="plan-door"/>
+          <path d="M 152 349 A 36 36 0 0 1 188 385" class="plan-door-swing"/>
+          <line x1="152" y1="385" x2="152" y2="349" class="plan-door-swing"/>
+          <!-- zonas clicables (según el modelo: biblioteca NO · taller E · informática S · flexible centro) -->
+          <g class="zone" data-zone="biblioteca" tabindex="0" role="button" aria-label="Zona A, biblioteca flexible">
+            <rect x="48" y="48" width="257.6" height="200"/>
+            <text x="176" y="128">A</text>
+            <text x="176" y="158" class="zone-sub">Biblioteca</text>
+          </g>
+          <g class="zone" data-zone="taller" tabindex="0" role="button" aria-label="Zona B, taller de microsoldadura">
+            <rect x="339.2" y="48" width="212.8" height="333"/>
+            <text x="445" y="196">B</text>
+            <text x="445" y="226" class="zone-sub">Taller</text>
+          </g>
+          <g class="zone" data-zone="flexible" tabindex="0" role="button" aria-label="Zona flexible central">
+            <rect x="104" y="248" width="235.2" height="68"/>
+            <text x="221" y="282" class="zone-text-sm">★</text>
+            <text x="221" y="306" class="zone-sub zone-sub-sm">Zona flexible</text>
+          </g>
+          <g class="zone" data-zone="informatica" tabindex="0" role="button" aria-label="Zona C, informática">
+            <rect x="227.2" y="316" width="112" height="65"/>
+            <text x="283" y="344" class="zone-text-sm">C</text>
+            <text x="283" y="366" class="zone-sub zone-sub-sm">Informática</text>
+          </g>
+          <!-- mobiliario según el modelo -->
+          <rect x="102" y="52" width="205" height="24" class="plan-furn"/>
+          <line x1="170" y1="52" x2="170" y2="76" class="plan-furn-dash"/>
+          <line x1="238" y1="52" x2="238" y2="76" class="plan-furn-dash"/>
+          <rect x="102" y="80" width="24" height="150" class="plan-furn"/>
+          <rect x="121" y="173" width="89" height="45" class="plan-furn"/>
+          <circle cx="98" cy="248" r="16" class="plan-furn"/>
+          <rect x="350" y="56" width="174" height="20" class="plan-furn"/>
+          <rect x="513" y="164" width="39" height="112" class="plan-furn"/>
+          <rect x="172" y="258" width="88" height="39" class="plan-furn"/>
+          <rect x="246" y="258" width="88" height="39" class="plan-furn"/>
+          <rect x="238" y="349" width="90" height="28" class="plan-furn"/>
+          <line x1="552" y1="180" x2="552" y2="202" class="plan-tv"/>
+          <text x="544" y="196" class="plan-label" text-anchor="end">TV</text>
+          <line x1="425" y1="44" x2="480" y2="44" class="plan-pizzara"/>
+          <text x="452" y="66" class="plan-label" text-anchor="middle">pizarra</text>
+          <rect x="524" y="190" width="24" height="38" class="plan-furn-dash"/>
+          <text x="518" y="212" class="plan-label" text-anchor="end">A.A.</text>
+          <line x1="44" y1="76" x2="44" y2="356" class="plan-board"/>
+          <text x="58" y="216" class="plan-label" transform="rotate(-90 58 216)" text-anchor="middle">fichero / pizarra</text>
+          <rect x="348" y="390" width="62" height="7" class="plan-sign"/>
+          <text x="379" y="452" class="plan-label" text-anchor="middle">CHISPA</text>
+          <!-- circulación -->
+          <path d="M 78 375 L 240 290" class="plan-circ"/>
+          <text x="150" y="332" class="plan-label plan-circ-label">circulación</text>
+          <!-- norte -->
+          <g>
+            <line x1="616" y1="88" x2="616" y2="58" stroke="rgba(255,255,255,0.5)" stroke-width="2"/>
+            <path d="M 616 48 L 610 60 L 622 60 Z" fill="rgba(255,255,255,0.5)"/>
+            <text x="616" y="108" class="plan-label" text-anchor="middle">N</text>
+          </g>
+        </svg>
+        <p class="plan-caption">Plano de zonificación según el modelo 3D (9,00 × 5,95 m · norte arriba · puerta doble y pórtico al sur).</p>
+      </div>
+
+      <div class="zone-panel reveal" id="zonePanel" aria-live="polite">
+        <div class="zone-panel-head">
+          <span class="zone-badge" id="zoneBadge">Zona</span>
+          <h3 id="zoneTitle">Elegí una zona</h3>
+          <button class="zone-3d-btn btn btn-ghost" id="zoneViewBtn">Ver en 3D
+            <svg viewBox="0 0 24 24"><path d="M12 3 4 8v8l8 5 8-5V8l-8-5zm0 2.3L18 9v6l-6 3.7L6 15V9l6-3.7z"/></svg>
+          </button>
+        </div>
+        <p id="zoneDesc">Cada función tiene su zona, sus horarios y sus normas, y todas comparten la zona
+          flexible central que las integra. Seleccioná una zona del plano para ver su equipamiento.</p>
+        <ul class="zone-equip" id="zoneEquip"></ul>
+      </div>
+    </div>
+
+    <!-- Objetivos -->
+    <div class="objectives">
+      <p class="kicker reveal">Objetivos de la propuesta</p>
+      <ol class="obj-list">
+        <li class="reveal"><span>1</span> Habilitar un taller de microsoldadura y electrónica con 6 puestos, apto para los Proyectos Integradores.</li>
+        <li class="reveal"><span>2</span> Incorporar una zona de informática con 4 puestos fijos y carga para notebooks institucionales.</li>
+        <li class="reveal"><span>3</span> Conservar y jerarquizar la biblioteca: estanterías reorganizadas, mesa de lectura y catálogo digital.</li>
+        <li class="reveal"><span>4</span> Generar una zona central reconfigurable para trabajo grupal, extensión del taller y exposiciones.</li>
+        <li class="reveal"><span>5</span> Resolver de manera profesional ventilación, iluminación y seguridad eléctrica.</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ INSTALACIONES ============ -->
+  <section class="section" id="instalaciones">
+    <div class="section-head">
+      <p class="kicker reveal">6 · Memoria técnica</p>
+      <h2 class="reveal">Instalaciones <span class="accent">proyectadas</span></h2>
+      <p class="section-lead reveal">El proyecto define puntos, potencias y protección. La ejecución estará a cargo de un electricista matriculado.</p>
+    </div>
+
+    <div class="inst-grid">
+      <!-- Electrica -->
+      <div class="inst-card reveal">
+        <h3><svg viewBox="0 0 24 24"><path d="M13 2 3 14h7l-1 8L19 10h-7l1-8z"/></svg> Instalación eléctrica</h3>
+        <p>Carga estimada de uso simultáneo pico:</p>
+        <table class="load-table">
+          <tbody>
+            <tr><td>Estaciones de soldadura (6 × 80 W)</td><td>480 W</td></tr>
+            <tr><td>Estación rework (pico)</td><td>700 W</td></tr>
+            <tr><td>Lámparas-lupa (6 × 8 W)</td><td>48 W</td></tr>
+            <tr><td>Fuentes de laboratorio (2 × 100 W)</td><td>200 W</td></tr>
+            <tr><td>PCs + monitores (4 × 250 W)</td><td>1.000 W</td></tr>
+            <tr><td>TV 50"</td><td>100 W</td></tr>
+            <tr><td>Extractores (3 × 30–60 W)</td><td>160 W</td></tr>
+            <tr><td>Iluminación (9 paneles × 40 W)</td><td>360 W</td></tr>
+            <tr class="load-total"><td>Total simultáneo pico</td><td>3,05 kW</td></tr>
+          </tbody>
+        </table>
+        <p>Tablero seccional nuevo con <strong>cuatro circuitos</strong>:</p>
+        <ul class="chips">
+          <li><strong>TK1</strong> · 16 A — tomas del taller</li>
+          <li><strong>TK2</strong> · 16 A — informática + TV</li>
+          <li><strong>TK3</strong> · 10 A — iluminación + extractores</li>
+          <li><strong>TK4</strong> — reserva</li>
+        </ul>
+        <p class="footnote">Protección: diferencial de 30 mA y puesta a tierra verificada. Canaleta con tomas dobles: 8 en banco oeste, 6 en banco norte, 5 en informática, 1 para TV.</p>
+      </div>
+
+      <!-- Iluminacion -->
+      <div class="inst-card reveal">
+        <h3><svg viewBox="0 0 24 24"><path d="M9 21h6v-1H9v1zm3-19a7 7 0 0 0-4 12.7c.6.5 1 1.4 1 2.3h6c0-.9.4-1.8 1-2.3A7 7 0 0 0 12 2z"/></svg> Iluminación · memoria de cálculo</h3>
+        <div class="lux-box">
+          <div class="lux-big"><span class="stat-num" data-count="440" data-decimals="0">0</span><span class="stat-unit">lux</span></div>
+          <p>en plano de trabajo, conforme a normativa IRAM-AADL para aulas y oficinas</p>
+        </div>
+        <div class="formula">
+          <code>E = (N · Φ · CU · MF) / A</code>
+          <p>E = (9 × 4.000 lm × 0,55 × 0,8) / 36 m² = <strong>440 lux</strong></p>
+          <p class="footnote">9 paneles LED de 40 W en retícula 3 × 3 (3,00 m entre ejes). Si la medición arroja &lt; 400 lux, se suman 3 paneles (retícula 3 × 4) alcanzando ≈ 585 lux. Tareas de precisión: lupa-lámpara con &gt; 1.000 lux en el punto.</p>
+        </div>
+        <ul class="chips">
+          <li><strong>5.000 K</strong> · taller (distinguir bandas de resistencias)</li>
+          <li><strong>4.000 K</strong> · resto del ambiente</li>
+          <li><strong>3.000 K</strong> · rincón de lectura (cálida)</li>
+          <li><strong>IRC ≥ 90</strong> · todo el ambiente</li>
+        </ul>
+      </div>
+
+      <!-- Ventilacion -->
+      <div class="inst-card reveal">
+        <h3><svg viewBox="0 0 24 24"><path d="M3 8h11a2.5 2.5 0 1 0-2.4-3.2l1.9.6A.5.5 0 1 1 14 6H3V8zm0 4h16a2.5 2.5 0 1 1-2.4 3.2l1.9-.6a.5.5 0 1 0 .5-.6H3v-2zm0 4h8a2 2 0 1 1-1.9 2.6l1.9-.6H3v-2z"/></svg> Ventilación en tres niveles</h3>
+        <ol class="vent-list">
+          <li><strong>Extracción localizada:</strong> 2 extractores de banco con filtro de carbón activado, a la altura de la punta del cautín (capturan el humo en la fuente).</li>
+          <li><strong>Renovación general:</strong> extractor de techo/muro Ø 200 mm, caudal ≈ 500 m³/h → <strong>≈ 4,6 renovaciones de aire por hora</strong> (rango recomendado: 4–6 para talleres livianos).</li>
+          <li><strong>Ventilación cruzada natural</strong> por las ventanas durante tareas sin soldadura.</li>
+        </ol>
+        <p class="footnote">Problema a resolver: los humos de flux no deben convivir con el acervo bibliográfico ni con los usuarios.</p>
+      </div>
+
+      <!-- Seguridad -->
+      <div class="inst-card reveal" id="seguridad">
+        <h3><svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V5l-8-3zm0 2.2 6 2.2v4.6c0 4-2.7 7.9-6 9-3.3-1.1-6-5-6-9V6.4l6-2.2z"/></svg> Seguridad e higiene</h3>
+        <ul class="check-list">
+          <li>Extintor CO₂ de 5 kg junto a la puerta (fuegos clase C), recarga vigente y señalizada</li>
+          <li>Botiquín y lavaojos portátil en la vitrina del taller</li>
+          <li>EPP: antiparras por puesto y pulseras antiestáticas</li>
+          <li>Vitrina con llave: herramientas, flux, solventes bajo custodia docente</li>
+          <li>Recipiente metálico con tapa para recortes de estaño</li>
+          <li>Contenedor RAEE / pilas — gestión sustentable de residuos electrónicos</li>
+          <li>Estanterías ancladas al muro (prevención de vuelco)</li>
+          <li>Reglamento de uso del taller visible: turnos, EPP, qué se puede usar sin docente</li>
+          <li>Pasillos ≥ 0,90 m y barrido de puerta siempre libre — evacuación garantizada</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Ergonomia -->
+    <div class="ergo reveal">
+      <h3>Circulación y ergonomía</h3>
+      <ul>
+        <li><strong>Eje diagonal</strong> de circulación puerta → centro, siempre libre.</li>
+        <li>Pasillos mínimos: <strong>1,00 m</strong> entre bancos y mesas; <strong>0,90 m</strong> frente a estanterías.</li>
+        <li>Alturas: banco 0,90 h · estanterías 1,80 h · TV 1,60 h · luminarias 3,00 h.</li>
+        <li>Se conserva íntegro el barrido de la puerta batiente.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ GESTION / SOSTENIBILIDAD ============ -->
+  <section class="section section-alt" id="sostenibilidad">
+    <div class="section-head">
+      <p class="kicker reveal">7 · Gestión y sostenibilidad</p>
+      <h2 class="reveal">La biblioteca se <span class="accent">jerarquiza</span>, no se reduce</h2>
+    </div>
+    <div class="sust-grid">
+      <div class="sust reveal"><h4>Gestión de la colección</h4>
+        <ul><li>Descarte técnico participativo junto a la bibliotecaria</li><li>Los ejemplares descartados se <strong>donan</strong> a bibliotecas populares</li><li>Catálogo digital con <strong>códigos QR por estante</strong></li><li>Rincón de lectura confortable (alfombra, lámpara cálida, mesa junto a la ventana)</li><li>La bibliotecaria integra el equipo de gestión del espacio</li></ul></div>
+      <div class="sust reveal"><h4>Económica</h4>
+        <ul><li>Fases progresivas de ejecución</li><li>Autofinanciación por servicio técnico</li><li>Bancos construidos por estudiantes: presupuesto = costo de materiales</li></ul></div>
+      <div class="sust reveal"><h4>Ambiental</h4>
+        <ul><li>Reuso del 100 % del mobiliario bibliotecario</li><li>Descarte donado, no descartado</li><li>Contenedor RAEE</li><li>LED de bajo consumo y ventilación mayormente natural</li></ul></div>
+      <div class="sust reveal"><h4>Social e institucional</h4>
+        <ul><li>Construcción del mobiliario por los propios estudiantes</li><li>Donación de libros y reparación a la comunidad</li><li>Reglamento y roles definidos: el proyecto funciona más allá del equipo proyectista</li></ul></div>
+    </div>
+    <blockquote class="quote quote-center reveal">
+      «Un libro consultado y una placa soldada ocurren a metros de distancia, en el mismo edificio y con el
+      mismo espíritu: <strong>formar pensando y haciendo</strong>.»
+    </blockquote>
+  </section>
+
+  <!-- ============ EQUIPO ============ -->
+  <section class="section" id="equipo">
+    <div class="section-head">
+      <p class="kicker reveal">8 · Equipo expositor</p>
+      <h2 class="reveal">Quiénes encienden la <span class="accent">chispa</span></h2>
+    </div>
+    <div class="team-grid">
+      <div class="member reveal"><span class="member-ava">AC</span><div><h4>Alejandro Cantán</h4><p>Alumno expositor</p></div></div>
+      <div class="member reveal"><span class="member-ava">EL</span><div><h4>Elián Lencinas</h4><p>Alumno expositor</p></div></div>
+      <div class="member reveal"><span class="member-ava">FP</span><div><h4>Fabricio Pinto</h4><p>Alumno expositor</p></div></div>
+      <div class="member reveal"><span class="member-ava">AZ</span><div><h4>Avril Zamboni</h4><p>Alumna expositora</p></div></div>
+      <div class="member reveal"><span class="member-ava">PM</span><div><h4>Paloma Murua</h4><p>Alumna expositora</p></div></div>
+      <div class="member reveal"><span class="member-ava">FB</span><div><h4>Francisco Bustos</h4><p>Alumno expositor</p></div></div>
+      <div class="member member-doc reveal"><span class="member-ava">ND</span><div><h4>Nicolás Agustín Dubois</h4><p>Docente asesor</p></div></div>
+    </div>
+  </section>
+
+  <!-- ============ CIERRE ============ -->
+  <section class="closing">
+    <div class="closing-inner">
+      <svg class="closing-spark" viewBox="0 0 32 32" aria-hidden="true"><path d="M18 2 6 18h8l-2 12L26 12h-9z"/></svg>
+      <p class="closing-quote reveal">
+        «Una biblioteca donde las ideas se consultan y un taller donde las ideas se construyen son, en CHISPA,
+        <span class="accent">el mismo lugar</span>.»
+      </p>
+      <p class="closing-sub reveal">Una chispa que enciende la posibilidad de seguir mejorando nuestra escuela.</p>
+      <a class="btn btn-primary reveal" href="#visor">Volver al modelo 3D</a>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <h4>CHISPA</h4>
+        <p>Biblioteca – Taller de Microelectrónica e Informática.<br/>Proyecto Integrador · Proyecto escuela · 6.º A · 2026.</p>
+      </div>
+      <div>
+        <h4>Institución</h4>
+        <p>Instituto José Antonio Balseiro<br/>IPET N.º 66 · Secundario<br/>Av. Hipólito Yrigoyen 258, B.º Nueva Córdoba<br/>Córdoba Capital</p>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <p>ipem66@gmail.com<br/>Tel. 351-4332330</p>
+      </div>
+    </div>
+    <p class="footer-note">Informe y modelo 3D: equipo CHISPA · Página de presentación generada para la competencia.</p>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
