@@ -37,7 +37,7 @@ document.querySelectorAll('.zone').forEach((el) => {
   el.addEventListener('click', () => selectZone(el.dataset.zone));
   el.addEventListener('keydown', (ev) => { if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); selectZone(el.dataset.zone); } });
 });
-panel.viewBtn.addEventListener('click', () => currentZone && selectZone(currentZone, true));
+panel.viewBtn?.addEventListener('click', () => document.getElementById('visor').scrollIntoView({ behavior: 'smooth' }));
 
 // ---------- Reveal on scroll ----------
 const io = new IntersectionObserver((entries) => {
