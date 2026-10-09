@@ -49,7 +49,8 @@ sun.shadow.camera.left = -12;
 sun.shadow.camera.right = 12;
 sun.shadow.camera.top = 12;
 sun.shadow.camera.bottom = -12;
-sun.shadow.bias = -0.0005;
+sun.shadow.bias = -0.0004;
+sun.shadow.normalBias = 0.02; // elimina el acne de sombras
 scene.add(sun);
 const fill = new THREE.DirectionalLight(0xdfe9ff, 0.6);
 fill.position.set(-7, 6, -6);
@@ -61,6 +62,7 @@ const ground = new THREE.Mesh(
   new THREE.ShadowMaterial({ opacity: 0.28 })
 );
 ground.rotation.x = -Math.PI / 2;
+ground.position.y = 0.004; // debajo del piso del modelo: sin z-fighting
 ground.receiveShadow = true;
 scene.add(ground);
 
@@ -116,7 +118,10 @@ loader.load(modelUrl, (gltf) => {
         // así que three.js los renderiza como losas sólidas. Forzamos transparencia real.
         if ((o.material.opacity ?? 1) < 1) {
           o.material.transparent = true;
-          o.material.depthWrite = false;
+          o.material.depthWrite = true;
+          o.material.polygonOffset = true;
+          o.material.polygonOffsetFactor = -2;
+          o.renderOrder = 2; // dibujar el vidrio al final, sin parpadeo
         }
       }
     }
