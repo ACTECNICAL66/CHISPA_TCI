@@ -10,5 +10,12 @@ Thumbs.db
 *.lck
 *.tmp
 
+# Binarios pesados: se suben por la web de GitHub (límite 25MB) o release,
+# NO en el push inicial para no trabar la subida
+BIBLIOTECA-TCI.skp
+chispa_raw.glb
+CHISPA.html
+chispa.glb
+
 # Vite cache
 chispa-web/.vite/
